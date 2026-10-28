@@ -1,0 +1,46 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.venv*/
+
+# Cache & logs
+catboost_info/
+.codegraph/
+*.log
+*.err
+
+# Large Raw Data files (>100MB)
+data/raw/
+data/*.zip
+data/interim/
+data/landwise/
+
+# Local secrets, prepared transfer inputs and expensive experiment artifacts
+.env
+.env.*
+!.env.example
+data/kumo_inputs/
+HPC/kumo_results/
+HPC/kumo_diagnostic/
+transfer/
+
+# Private registration documents and local runtime binaries
+Berkas Daftar/
+bin/
+
+# Datasets and generated model outputs are transferred separately
+data/
+preds/
+submissions/
+HPC/anchors/
+HPC/data/
+HPC/preds/
+HPC/submissions/
+HPC/logs/

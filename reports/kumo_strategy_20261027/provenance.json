@@ -1,0 +1,9 @@
+{
+  "input_prediction_file": "ens_q4cbf_full.csv",
+  "sha256": "2214dcbd511833776e44a706e1200fc904c31c30c7d0d1b4e596afb1d9ca5b83",
+  "repo_reference_access": "GitHub public page and GitHub connector both returned 404; repository search returned no accessible matches. No reference repository code was read.",
+  "analysis_scope": "Read-only diagnostics of supplied predictions and local raw data; existing OOF metrics recomputed. No new model training or inference.",
+  "planning_hardware_assumption": "A100-SXM4 80GB shared node, from existing HPC/README_HPC.md; actual friend GPU availability unverified.",
+  "computation_script": "analyze_inputs.py",
+  "supporting_raw_checks": "raw_structure_checks.json"
+}

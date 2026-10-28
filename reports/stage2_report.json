@@ -1,0 +1,206 @@
+{
+  "target_rate": 0.13581428571428572,
+  "cat_breakdowns": {
+    "loan_purpose": [
+      {
+        "loan_purpose": "education",
+        "count": 13901,
+        "target_mean": 0.13646500251780447,
+        "target_sum": 1897
+      },
+      {
+        "loan_purpose": "home_improvement",
+        "count": 14143,
+        "target_mean": 0.1351905536307714,
+        "target_sum": 1912
+      },
+      {
+        "loan_purpose": "household",
+        "count": 14006,
+        "target_mean": 0.13815507639583036,
+        "target_sum": 1935
+      },
+      {
+        "loan_purpose": "medical",
+        "count": 13999,
+        "target_mean": 0.13629544967497678,
+        "target_sum": 1908
+      },
+      {
+        "loan_purpose": "working_capital",
+        "count": 13951,
+        "target_mean": 0.13296537882589063,
+        "target_sum": 1855
+      }
+    ],
+    "term_months": [
+      {
+        "term_months": 12,
+        "count": 70000,
+        "target_mean": 0.13581428571428572,
+        "target_sum": 9507
+      }
+    ],
+    "region": [
+      {
+        "region": "Region_A",
+        "count": 13978,
+        "target_mean": 0.13571326370010015,
+        "target_sum": 1897
+      },
+      {
+        "region": "Region_B",
+        "count": 13951,
+        "target_mean": 0.13633431295247653,
+        "target_sum": 1902
+      },
+      {
+        "region": "Region_C",
+        "count": 13855,
+        "target_mean": 0.13547455792132804,
+        "target_sum": 1877
+      },
+      {
+        "region": "Region_D",
+        "count": 14042,
+        "target_mean": 0.14250106822389974,
+        "target_sum": 2001
+      },
+      {
+        "region": "Region_E",
+        "count": 14174,
+        "target_mean": 0.12910963736418796,
+        "target_sum": 1830
+      }
+    ],
+    "employment_type": [
+      {
+        "employment_type": "salaried",
+        "count": 33473,
+        "target_mean": 0.13240522211932004,
+        "target_sum": 4432
+      },
+      {
+        "employment_type": "self_employed",
+        "count": 20987,
+        "target_mean": 0.13794253585552962,
+        "target_sum": 2895
+      },
+      {
+        "employment_type": "variable_income",
+        "count": 15540,
+        "target_mean": 0.1402831402831403,
+        "target_sum": 2180
+      }
+    ],
+    "housing_status": [
+      {
+        "housing_status": "family",
+        "count": 20400,
+        "target_mean": 0.13431372549019607,
+        "target_sum": 2740
+      },
+      {
+        "housing_status": "owned",
+        "count": 19500,
+        "target_mean": 0.13692307692307693,
+        "target_sum": 2670
+      },
+      {
+        "housing_status": "rented",
+        "count": 30100,
+        "target_mean": 0.13611295681063124,
+        "target_sum": 4097
+      }
+    ]
+  },
+  "date_ranges": {
+    "train_application_range": [
+      "2024-12-27 11:26:46",
+      "2025-12-28 20:40:48"
+    ],
+    "train_decision_range": [
+      "2025-01-01 08:00:00",
+      "2025-12-28 20:59:00"
+    ],
+    "test_application_range": [
+      "2024-12-27 18:14:37",
+      "2025-12-28 20:14:22"
+    ],
+    "test_decision_range": [
+      "2025-01-01 08:07:00",
+      "2025-12-28 20:52:00"
+    ]
+  },
+  "diff_hours": {
+    "train_min_hours": 0.0,
+    "train_p50_hours": 9.0,
+    "train_max_hours": 119.0,
+    "train_neg_count": 0,
+    "test_min_hours": 0.0,
+    "test_p50_hours": 10.0,
+    "test_max_hours": 119.0,
+    "test_neg_count": 0
+  },
+  "amort_check": {
+    "max_abs_diff": 0.9999619093723595,
+    "median_abs_diff": 0.5001779543235898,
+    "within_1_idr": 70000,
+    "total": 70000
+  },
+  "adversarial_auc": 0.5051695204761905,
+  "univariate_signals": {
+    "loan_amount": {
+      "auc": 0.5373,
+      "ks": 0.0556
+    },
+    "annual_interest_rate": {
+      "auc": 0.6464,
+      "ks": 0.2301
+    },
+    "proposed_monthly_installment": {
+      "auc": 0.5412,
+      "ks": 0.0613
+    },
+    "loan_purpose": {
+      "auc": 0.504,
+      "ks": 0.0059
+    },
+    "age": {
+      "auc": 0.5047,
+      "ks": 0.0106
+    },
+    "region": {
+      "auc": 0.5095,
+      "ks": 0.0123
+    },
+    "employment_type": {
+      "auc": 0.5076,
+      "ks": 0.0139
+    },
+    "employment_tenure_months": {
+      "auc": 0.5045,
+      "ks": 0.0124
+    },
+    "declared_monthly_income": {
+      "auc": 0.5145,
+      "ks": 0.0236
+    },
+    "dependents": {
+      "auc": 0.5079,
+      "ks": 0.0134
+    },
+    "housing_status": {
+      "auc": 0.5023,
+      "ks": 0.0037
+    },
+    "installment_income_ratio": {
+      "auc": 0.5498,
+      "ks": 0.0778
+    },
+    "loan_income_ratio": {
+      "auc": 0.5432,
+      "ks": 0.0684
+    }
+  }
+}

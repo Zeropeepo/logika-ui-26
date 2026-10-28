@@ -1,0 +1,122 @@
+{
+  "previous_applications": {
+    "rows": 201984,
+    "customers": 70000,
+    "decisions": [
+      {
+        "decision": "rejected",
+        "len": 24269
+      },
+      {
+        "decision": "cancelled",
+        "len": 18392
+      },
+      {
+        "decision": "approved",
+        "len": 159323
+      }
+    ],
+    "future_decisions": 0
+  },
+  "account_behavior": {
+    "rows": 1084418,
+    "customers": 70000,
+    "last_row_is_latest_fraction": 1.0,
+    "observations_per_customer_quantiles": 15.0,
+    "balance_identity_violation_rows": 0,
+    "incomplete_month_rows": 0
+  },
+  "bureau": {
+    "rows": 797563,
+    "customers": 100000,
+    "providers": [
+      {
+        "bureau_provider": "Bureau_A",
+        "n": 301984,
+        "missing_score_n": 15823,
+        "score_mean": 668.9857982045072,
+        "score_std": 53.25348870132089
+      },
+      {
+        "bureau_provider": "Bureau_B",
+        "n": 247657,
+        "missing_score_n": 13762,
+        "score_mean": 668.9512730071186,
+        "score_std": 53.29435307051048
+      },
+      {
+        "bureau_provider": "Bureau_C",
+        "n": 247922,
+        "missing_score_n": 14254,
+        "score_mean": 668.9671371347382,
+        "score_std": 53.32830994867766
+      }
+    ],
+    "post_cutoff_available_rows": 0,
+    "same_customer_report_date_multi_provider_n": 46
+  },
+  "repayment": {
+    "rows": 1361341,
+    "customers": 66157,
+    "loans": 155901,
+    "future_due_rows": 0,
+    "future_payment_rows": 0,
+    "paid_above_due_rows": 0
+  },
+  "ecommerce": {
+    "item_rows": 4359817,
+    "orders": 2986855,
+    "customers": 100000,
+    "mean_items_per_order": 1.4596681124460344,
+    "order_total_mismatch_rows": 0,
+    "inconsistent_status_or_total_orders": 0,
+    "status": [
+      {
+        "order_status": "completed",
+        "len": 2806859
+      },
+      {
+        "order_status": "cancelled",
+        "len": 179996
+      }
+    ],
+    "post_cutoff_orders": 0,
+    "category_summary": [
+      {
+        "product_category": "groceries",
+        "item_n": 1088736,
+        "spend": 109711531000
+      },
+      {
+        "product_category": "electronics",
+        "item_n": 289796,
+        "spend": 443197069000
+      },
+      {
+        "product_category": "education",
+        "item_n": 361802,
+        "spend": 63048161000
+      },
+      {
+        "product_category": "personal_care",
+        "item_n": 652425,
+        "spend": 83746784000
+      },
+      {
+        "product_category": "fashion",
+        "item_n": 725618,
+        "spend": 213618062000
+      },
+      {
+        "product_category": "health",
+        "item_n": 435063,
+        "spend": 87896540000
+      },
+      {
+        "product_category": "home",
+        "item_n": 543509,
+        "spend": 279308422000
+      }
+    ]
+  }
+}

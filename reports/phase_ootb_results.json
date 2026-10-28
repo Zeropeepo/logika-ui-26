@@ -1,0 +1,63 @@
+{
+  "shadow_noise": {
+    "max_noise_gain": 555.4023432731628,
+    "mean_noise_gain": 357.17375164031984,
+    "noise_columns_tested": 20
+  },
+  "family_summary": {
+    "1. Struktur Data": {
+      "total_candidates": 7,
+      "passed_candidates": 1,
+      "passed_columns": [
+        "f1_tier_x_ecom_spend"
+      ],
+      "best_feature": "f1_tier_x_ecom_spend",
+      "best_gain": 6011.580031871796,
+      "decision": "ADOPTED"
+    },
+    "2. Kink/Threshold": {
+      "total_candidates": 8,
+      "passed_candidates": 0,
+      "passed_columns": [],
+      "best_feature": "f2_kink_ecom_recency_le_2d",
+      "best_gain": 40.333099365234375,
+      "decision": "REJECTED"
+    },
+    "4. Artefak/Hidden Debt": {
+      "total_candidates": 4,
+      "passed_candidates": 0,
+      "passed_columns": [],
+      "best_feature": "f4_working_age_ratio",
+      "best_gain": 424.5083408355713,
+      "decision": "REJECTED"
+    },
+    "5. Periodisitas/Entropi": {
+      "total_candidates": 4,
+      "passed_candidates": 0,
+      "passed_columns": [],
+      "best_feature": "f5_weekend_order_share",
+      "best_gain": 540.842324256897,
+      "decision": "REJECTED"
+    },
+    "6. Kohort/Representasi": {
+      "total_candidates": 2,
+      "passed_candidates": 0,
+      "passed_columns": [],
+      "best_feature": "f6_ecom_spend_in_income_decile",
+      "best_gain": 303.79147815704346,
+      "decision": "REJECTED"
+    }
+  },
+  "adopted_features": [
+    "f1_tier_x_ecom_spend"
+  ],
+  "lgb_ootb_15fold": {
+    "mean_ks": 0.5000196532226635,
+    "std_ks": 0.008842145580790557,
+    "oof_ks": 0.49897823787561907,
+    "oof_auc": 0.8311021074756582,
+    "delta_vs_v3": -0.0016179705926850918,
+    "delta_vs_base1": 0.010019653222663516,
+    "time_sec": 82.9581069946289
+  }
+}

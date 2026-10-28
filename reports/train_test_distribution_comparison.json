@@ -1,0 +1,1210 @@
+[
+  {
+    "feature": "loan_amount",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 23866790.0,
+    "test_mean": 23744580.0,
+    "train_median": 19000000.0,
+    "test_median": 19000000.0
+  },
+  {
+    "feature": "term_months",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 12.0,
+    "test_mean": 12.0,
+    "train_median": 12.0,
+    "test_median": 12.0
+  },
+  {
+    "feature": "annual_interest_rate",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.2118,
+    "test_mean": 0.2119,
+    "train_median": 0.2,
+    "test_median": 0.2
+  },
+  {
+    "feature": "proposed_monthly_installment",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2226584.7435,
+    "test_mean": 2215537.4236,
+    "train_median": 1769320.0,
+    "test_median": 1768265.0
+  },
+  {
+    "feature": "loan_purpose",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "age",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 41.4618,
+    "test_mean": 41.6224,
+    "train_median": 41.0,
+    "test_median": 42.0
+  },
+  {
+    "feature": "region",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "employment_type",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "employment_tenure_months",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 51.4118,
+    "test_mean": 52.0637,
+    "train_median": 44.0,
+    "test_median": 45.0
+  },
+  {
+    "feature": "declared_monthly_income",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 9327306.873,
+    "test_mean": 9268680.5256,
+    "train_median": 7784705.5,
+    "test_median": 7749696.0
+  },
+  {
+    "feature": "dependents",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 1.6472,
+    "test_mean": 1.6561,
+    "train_median": 2.0,
+    "test_median": 2.0
+  },
+  {
+    "feature": "housing_status",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "hours_to_decision",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 22.1562,
+    "test_mean": 22.5715,
+    "train_median": 9.0,
+    "test_median": 10.0
+  },
+  {
+    "feature": "installment_income_ratio",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.2451,
+    "test_mean": 0.2451,
+    "train_median": 0.2338,
+    "test_median": 0.2333
+  },
+  {
+    "feature": "loan_income_ratio",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2.6275,
+    "test_mean": 2.6276,
+    "train_median": 2.5104,
+    "test_median": 2.5024
+  },
+  {
+    "feature": "monthly_interest_rate",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.0177,
+    "test_mean": 0.0177,
+    "train_median": 0.0167,
+    "test_median": 0.0167
+  },
+  {
+    "feature": "total_repayment_amount",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 26719016.9215,
+    "test_mean": 26586449.0832,
+    "train_median": 21231840.0,
+    "test_median": 21219180.0
+  },
+  {
+    "feature": "interest_amount",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2852226.9215,
+    "test_mean": 2841869.0832,
+    "train_median": 2221124.0,
+    "test_median": 2221124.0
+  },
+  {
+    "feature": "interest_principal_ratio",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.1185,
+    "test_mean": 0.1186,
+    "train_median": 0.1116,
+    "test_median": 0.1116
+  },
+  {
+    "feature": "income_per_dependent",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 4557916.5581,
+    "test_mean": 4513079.2096,
+    "train_median": 3204757.5,
+    "test_median": 3188522.6667
+  },
+  {
+    "feature": "tenure_age_ratio",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.1106,
+    "test_mean": 0.1116,
+    "train_median": 0.0911,
+    "test_median": 0.0923
+  },
+  {
+    "feature": "prev_app_count",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "prev_approved_count",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "prev_rejected_count",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "prev_cancelled_count",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "prev_originated_loans_count",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "prev_total_approved_amount",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 51821459.1837,
+    "test_mean": 51740995.2381,
+    "train_median": 39400000.0,
+    "test_median": 38900000.0
+  },
+  {
+    "feature": "prev_mean_approved_amount",
+    "train_null_pct": 33.48,
+    "test_null_pct": 33.49,
+    "null_diff": 0.01,
+    "train_mean": 22745861.0317,
+    "test_mean": 22631758.314,
+    "train_median": 19100000.0,
+    "test_median": 19036666.6667
+  },
+  {
+    "feature": "prev_total_requested_amount",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 68791175.5102,
+    "test_mean": 68709776.1905,
+    "train_median": 53800000.0,
+    "test_median": 53800000.0
+  },
+  {
+    "feature": "prev_recency_days",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 222.6949,
+    "test_mean": 221.86,
+    "train_median": 177.0,
+    "test_median": 178.0
+  },
+  {
+    "feature": "prev_app_recency_days",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 223.4068,
+    "test_mean": 222.5774,
+    "train_median": 178.0,
+    "test_median": 179.0
+  },
+  {
+    "feature": "prev_approval_rate",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.7894,
+    "test_mean": 0.7908,
+    "train_median": 1.0,
+    "test_median": 1.0
+  },
+  {
+    "feature": "prev_rejection_rate",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.1196,
+    "test_mean": 0.1178,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "prev_ratio_approved_requested",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.7569,
+    "test_mean": 0.7574,
+    "train_median": 0.8957,
+    "test_median": 0.897
+  },
+  {
+    "feature": "repay_installment_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01
+  },
+  {
+    "feature": "repay_loans_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01
+  },
+  {
+    "feature": "repay_total_amount_due",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 45453674.7388,
+    "test_mean": 45272582.9773,
+    "train_median": 33459193.5,
+    "test_median": 33456961.0
+  },
+  {
+    "feature": "repay_total_amount_paid",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 43985850.3104,
+    "test_mean": 43784319.3672,
+    "train_median": 32337271.0,
+    "test_median": 32349225.0
+  },
+  {
+    "feature": "repay_ontime_ratio",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.9516,
+    "test_mean": 0.9515,
+    "train_median": 1.0,
+    "test_median": 1.0
+  },
+  {
+    "feature": "repay_underpaid_ratio",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.0493,
+    "test_mean": 0.0493,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_max_dpd",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 17.0644,
+    "test_mean": 16.9864,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_mean_dpd",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 2.094,
+    "test_mean": 2.0177,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_max_max_dpd",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 50.5233,
+    "test_mean": 50.5384,
+    "train_median": 30.0,
+    "test_median": 30.0
+  },
+  {
+    "feature": "repay_dpd_ge_30_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.4561,
+    "test_mean": 0.4501,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_dpd_ge_60_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.255,
+    "test_mean": 0.2524,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_dpd_ge_90_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.1503,
+    "test_mean": 0.1468,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_min_days_since_due",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 52.7072,
+    "test_mean": 53.0573,
+    "train_median": 15.0,
+    "test_median": 15.0
+  },
+  {
+    "feature": "repay_active_loans_count",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01
+  },
+  {
+    "feature": "repay_paid_over_due_ratio",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.9639,
+    "test_mean": 0.9641,
+    "train_median": 1.0,
+    "test_median": 1.0
+  },
+  {
+    "feature": "repay_recent6_max_dpd",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 13.571,
+    "test_mean": 13.4655,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_recent6_mean_dpd",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 4.351,
+    "test_mean": 4.2933,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_recent6_underpaid_ratio",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.128,
+    "test_mean": 0.1277,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "repay_recent6_ontime_ratio",
+    "train_null_pct": 33.84,
+    "test_null_pct": 33.85,
+    "null_diff": 0.01,
+    "train_mean": 0.8743,
+    "test_mean": 0.8745,
+    "train_median": 1.0,
+    "test_median": 1.0
+  },
+  {
+    "feature": "acct_observed_months",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "acct_mean_balance_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 38153632.5628,
+    "test_mean": 37973395.505,
+    "train_median": 26417856.7216,
+    "test_median": 27132752.9444
+  },
+  {
+    "feature": "acct_std_balance_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 16693246.0976,
+    "test_mean": 16559717.1218,
+    "train_median": 10779177.4392,
+    "test_median": 10975653.7354
+  },
+  {
+    "feature": "acct_total_inflows_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 145398112.6542,
+    "test_mean": 144571548.573,
+    "train_median": 118300581.0,
+    "test_median": 118571067.0
+  },
+  {
+    "feature": "acct_total_outflows_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 93937702.4294,
+    "test_mean": 93464009.9933,
+    "train_median": 79040498.0,
+    "test_median": 78655079.5
+  },
+  {
+    "feature": "acct_mean_inflows_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 9396889.2718,
+    "test_mean": 9367432.1008,
+    "train_median": 7979638.3052,
+    "test_median": 8015290.0
+  },
+  {
+    "feature": "acct_mean_outflows_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 6143887.0164,
+    "test_mean": 6126087.126,
+    "train_median": 5290401.7424,
+    "test_median": 5279300.8347
+  },
+  {
+    "feature": "acct_mean_income_credits_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 5430888.7655,
+    "test_mean": 5418608.4768,
+    "train_median": 4581932.6944,
+    "test_median": 4597045.0303
+  },
+  {
+    "feature": "acct_total_low_balance_days_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 14.8672,
+    "test_mean": 14.5033,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "acct_mean_low_balance_days_all",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 1.0406,
+    "test_mean": 1.0301,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "acct_outflow_inflow_ratio",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.7038,
+    "test_mean": 0.702,
+    "train_median": 0.6817,
+    "test_median": 0.6791
+  },
+  {
+    "feature": "acct_balance_volatility",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.4738,
+    "test_mean": 0.4739,
+    "train_median": 0.4597,
+    "test_median": 0.461
+  },
+  {
+    "feature": "acct_mean_balance_3m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 58432386.6048,
+    "test_mean": 58067717.2085,
+    "train_median": 38749264.5,
+    "test_median": 39773661.8333
+  },
+  {
+    "feature": "acct_mean_inflows_3m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 9556766.1481,
+    "test_mean": 9515991.5291,
+    "train_median": 7954758.0,
+    "test_median": 8011049.75
+  },
+  {
+    "feature": "acct_mean_outflows_3m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 6798249.9144,
+    "test_mean": 6776016.0228,
+    "train_median": 5679702.6667,
+    "test_median": 5641916.4167
+  },
+  {
+    "feature": "acct_mean_income_credits_3m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 5529221.7525,
+    "test_mean": 5510663.6415,
+    "train_median": 4457936.4167,
+    "test_median": 4490076.3333
+  },
+  {
+    "feature": "acct_low_balance_days_3m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 2.9725,
+    "test_mean": 2.95,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "acct_mean_balance_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 54262799.6205,
+    "test_mean": 53935372.2776,
+    "train_median": 35691719.4167,
+    "test_median": 36692209.0333
+  },
+  {
+    "feature": "acct_mean_inflows_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 9498108.0051,
+    "test_mean": 9465552.8611,
+    "train_median": 8002593.0,
+    "test_median": 8035351.4
+  },
+  {
+    "feature": "acct_mean_outflows_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 6691571.911,
+    "test_mean": 6672833.4429,
+    "train_median": 5675878.1833,
+    "test_median": 5660834.8167
+  },
+  {
+    "feature": "acct_mean_income_credits_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 5491451.904,
+    "test_mean": 5472779.5604,
+    "train_median": 4515884.6,
+    "test_median": 4536965.3
+  },
+  {
+    "feature": "acct_low_balance_days_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 6.4388,
+    "test_mean": 6.4221,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "acct_mean_balance_12m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 45993091.4835,
+    "test_mean": 45672847.5082,
+    "train_median": 29865925.9136,
+    "test_median": 30598410.8636
+  },
+  {
+    "feature": "acct_mean_inflows_12m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 9429735.9729,
+    "test_mean": 9400739.8167,
+    "train_median": 7994576.9167,
+    "test_median": 8040852.197
+  },
+  {
+    "feature": "acct_mean_outflows_12m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 6441660.6408,
+    "test_mean": 6426826.4949,
+    "train_median": 5533546.5833,
+    "test_median": 5515363.8295
+  },
+  {
+    "feature": "acct_mean_income_credits_12m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 5440073.3058,
+    "test_mean": 5427984.0063,
+    "train_median": 4552645.4091,
+    "test_median": 4589099.4545
+  },
+  {
+    "feature": "acct_low_balance_days_12m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 12.1223,
+    "test_mean": 11.9423,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "acct_inflow_trend_3m_vs_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 1.0045,
+    "test_mean": 1.0041,
+    "train_median": 1.0022,
+    "test_median": 1.0021
+  },
+  {
+    "feature": "acct_outflow_trend_3m_vs_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 1.0124,
+    "test_mean": 1.011,
+    "train_median": 1.0089,
+    "test_median": 1.0071
+  },
+  {
+    "feature": "acct_balance_trend_3m_vs_6m",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 1.0613,
+    "test_mean": 1.0626,
+    "train_median": 1.0753,
+    "test_median": 1.0752
+  },
+  {
+    "feature": "bureau_provider_count",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "bureau_score_min",
+    "train_null_pct": 0.25,
+    "test_null_pct": 0.23,
+    "null_diff": 0.02,
+    "train_mean": 652.6453,
+    "test_mean": 652.639,
+    "train_median": 652.0,
+    "test_median": 652.0
+  },
+  {
+    "feature": "bureau_score_mean",
+    "train_null_pct": 0.25,
+    "test_null_pct": 0.23,
+    "null_diff": 0.02,
+    "train_mean": 668.4134,
+    "test_mean": 668.4708,
+    "train_median": 668.0,
+    "test_median": 668.0
+  },
+  {
+    "feature": "bureau_score_max",
+    "train_null_pct": 0.25,
+    "test_null_pct": 0.23,
+    "null_diff": 0.02,
+    "train_mean": 684.1581,
+    "test_mean": 684.2877,
+    "train_median": 684.0,
+    "test_median": 684.0
+  },
+  {
+    "feature": "bureau_score_std",
+    "train_null_pct": 7.08,
+    "test_null_pct": 6.92,
+    "null_diff": 0.16,
+    "train_mean": 19.5623,
+    "test_mean": 19.6367,
+    "train_median": 17.9536,
+    "test_median": 17.9536
+  },
+  {
+    "feature": "bureau_has_unscored",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.1374,
+    "test_mean": 0.139,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_all_unscored",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.0025,
+    "test_mean": 0.0023,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_total_active_accounts",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 5.5449,
+    "test_mean": 5.5724,
+    "train_median": 5.0,
+    "test_median": 5.0
+  },
+  {
+    "feature": "bureau_max_active_accounts",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2.6327,
+    "test_mean": 2.6378,
+    "train_median": 2.0,
+    "test_median": 2.0
+  },
+  {
+    "feature": "bureau_total_outstanding_balance",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 44852410.4388,
+    "test_mean": 44337759.1311,
+    "train_median": 31513544.0,
+    "test_median": 31396170.0
+  },
+  {
+    "feature": "bureau_total_revolving_limit",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 20845896.4698,
+    "test_mean": 20618673.1272,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_total_revolving_balance",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 10171195.129,
+    "test_mean": 9968174.0491,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_total_inquiries_6m",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 3.9631,
+    "test_mean": 3.9135,
+    "train_median": 4.0,
+    "test_median": 4.0
+  },
+  {
+    "feature": "bureau_max_inquiries_6m",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2.393,
+    "test_mean": 2.3616,
+    "train_median": 2.0,
+    "test_median": 2.0
+  },
+  {
+    "feature": "bureau_total_delinquent_12m",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.4964,
+    "test_mean": 0.4913,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_max_delinquent_12m",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.4293,
+    "test_mean": 0.4268,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_days_since_available",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.0986,
+    "test_mean": 0.102,
+    "train_median": 0.0,
+    "test_median": 0.0
+  },
+  {
+    "feature": "bureau_recalculated_utilization",
+    "train_null_pct": 52.29,
+    "test_null_pct": 52.31,
+    "null_diff": 0.02,
+    "train_mean": 0.4864,
+    "test_mean": 0.4828,
+    "train_median": 0.4856,
+    "test_median": 0.4826
+  },
+  {
+    "feature": "bureau_score_Bureau_A",
+    "train_null_pct": 5.15,
+    "test_null_pct": 5.37,
+    "null_diff": 0.22,
+    "train_mean": 668.3866,
+    "test_mean": 668.3325,
+    "train_median": 668.0,
+    "test_median": 668.0
+  },
+  {
+    "feature": "bureau_score_Bureau_B",
+    "train_null_pct": 22.73,
+    "test_null_pct": 22.35,
+    "null_diff": 0.38,
+    "train_mean": 668.2573,
+    "test_mean": 668.243,
+    "train_median": 668.0,
+    "test_median": 668.0
+  },
+  {
+    "feature": "bureau_score_Bureau_C",
+    "train_null_pct": 22.6,
+    "test_null_pct": 22.58,
+    "null_diff": 0.02,
+    "train_mean": 668.2596,
+    "test_mean": 668.3282,
+    "train_median": 668.0,
+    "test_median": 668.0
+  },
+  {
+    "feature": "ecom_total_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_cancelled_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_completed_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_cancellation_rate",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.0603,
+    "test_mean": 0.0602,
+    "train_median": 0.0541,
+    "test_median": 0.0556
+  },
+  {
+    "feature": "ecom_total_spending",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 12812531.5571,
+    "test_mean": 12788312.0,
+    "train_median": 10782000.0,
+    "test_median": 10787500.0
+  },
+  {
+    "feature": "ecom_mean_order_value",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 456736.2205,
+    "test_mean": 455338.1765,
+    "train_median": 399588.2353,
+    "test_median": 399466.0633
+  },
+  {
+    "feature": "ecom_max_order_value",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 2466708.4143,
+    "test_mean": 2456094.0333,
+    "train_median": 2002000.0,
+    "test_median": 1989500.0
+  },
+  {
+    "feature": "ecom_recency_days",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 23.685,
+    "test_mean": 23.5756,
+    "train_median": 11.0,
+    "test_median": 11.0
+  },
+  {
+    "feature": "ecom_spending_30d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 1381546.4143,
+    "test_mean": 1388657.3333,
+    "train_median": 476500.0,
+    "test_median": 474500.0
+  },
+  {
+    "feature": "ecom_spending_90d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 3236054.3143,
+    "test_mean": 3221903.1667,
+    "train_median": 1996000.0,
+    "test_median": 2000000.0
+  },
+  {
+    "feature": "ecom_spending_180d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 5791951.2857,
+    "test_mean": 5771991.9333,
+    "train_median": 4354000.0,
+    "test_median": 4343000.0
+  },
+  {
+    "feature": "ecom_orders_30d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_orders_90d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_orders_180d",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_cod_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_ewallet_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_transfer_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_credit_orders",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_cod_share",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.4053,
+    "test_mean": 0.4056,
+    "train_median": 0.4348,
+    "test_median": 0.4348
+  },
+  {
+    "feature": "ecom_item_total_items",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_items_groceries",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_items_electronics",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_items_fashion",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0
+  },
+  {
+    "feature": "ecom_groceries_share",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.2655,
+    "test_mean": 0.2658,
+    "train_median": 0.25,
+    "test_median": 0.25
+  },
+  {
+    "feature": "ecom_electronics_share",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.0708,
+    "test_mean": 0.0702,
+    "train_median": 0.0435,
+    "test_median": 0.0423
+  },
+  {
+    "feature": "ecom_fashion_share",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.1773,
+    "test_mean": 0.1761,
+    "train_median": 0.1538,
+    "test_median": 0.1538
+  },
+  {
+    "feature": "income_credits_to_declared_ratio",
+    "train_null_pct": 30.0,
+    "test_null_pct": 30.0,
+    "null_diff": 0.0,
+    "train_mean": 0.65,
+    "test_mean": 0.653,
+    "train_median": 0.5962,
+    "test_median": 0.5972
+  },
+  {
+    "feature": "total_debt_to_income",
+    "train_null_pct": 0.0,
+    "test_null_pct": 0.0,
+    "null_diff": 0.0,
+    "train_mean": 0.6814,
+    "test_mean": 0.6771,
+    "train_median": 0.565,
+    "test_median": 0.5631
+  }
+]

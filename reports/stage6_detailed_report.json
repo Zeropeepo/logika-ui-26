@@ -1,0 +1,162 @@
+{
+  "target_reconstruction": {
+    "loan_id_in_train": false,
+    "train_app_in_prev": 0,
+    "post_decision_installments": 0,
+    "post_decision_payments": 0,
+    "conclusion": "Target reconstruction is IMPOSSIBLE from repayment_history because all repayment data strictly ends before decision_datetime, and target loans have no installments recorded in repayment_history."
+  },
+  "cv_performance": {
+    "fold_ks": [
+      0.4867,
+      0.5019,
+      0.4956,
+      0.4743,
+      0.4812
+    ],
+    "mean_ks": 0.4879,
+    "std_ks": 0.0099,
+    "oof_ks": 0.4836,
+    "ci_95": [
+      0.4744,
+      0.4945
+    ],
+    "holdout_ks": 0.4991,
+    "oof_auc": 0.8204
+  },
+  "segment_performance": {
+    "loan_purpose": {
+      "home_improvement": {
+        "count": 11329,
+        "target_rate": 0.1366,
+        "ks": 0.4842
+      },
+      "medical": {
+        "count": 11195,
+        "target_rate": 0.1356,
+        "ks": 0.4765
+      },
+      "household": {
+        "count": 11173,
+        "target_rate": 0.1394,
+        "ks": 0.5047
+      },
+      "working_capital": {
+        "count": 11158,
+        "target_rate": 0.1314,
+        "ks": 0.4758
+      },
+      "education": {
+        "count": 11145,
+        "target_rate": 0.1362,
+        "ks": 0.4884
+      }
+    },
+    "region": {
+      "Region_D": {
+        "count": 11206,
+        "target_rate": 0.1446,
+        "ks": 0.4938
+      },
+      "Region_E": {
+        "count": 11360,
+        "target_rate": 0.1283,
+        "ks": 0.4914
+      },
+      "Region_B": {
+        "count": 11095,
+        "target_rate": 0.1363,
+        "ks": 0.4863
+      },
+      "Region_C": {
+        "count": 11090,
+        "target_rate": 0.1329,
+        "ks": 0.4808
+      },
+      "Region_A": {
+        "count": 11249,
+        "target_rate": 0.1371,
+        "ks": 0.4862
+      }
+    },
+    "employment_type": {
+      "salaried": {
+        "count": 26812,
+        "target_rate": 0.1328,
+        "ks": 0.4845
+      },
+      "self_employed": {
+        "count": 16773,
+        "target_rate": 0.1375,
+        "ks": 0.4822
+      },
+      "variable_income": {
+        "count": 12415,
+        "target_rate": 0.1402,
+        "ks": 0.4915
+      }
+    },
+    "origination_month": {
+      "2025-01": {
+        "count": 4641,
+        "target_rate": 0.1446,
+        "ks": 0.5092
+      },
+      "2025-02": {
+        "count": 4707,
+        "target_rate": 0.1466,
+        "ks": 0.4976
+      },
+      "2025-03": {
+        "count": 4672,
+        "target_rate": 0.1363,
+        "ks": 0.4656
+      },
+      "2025-04": {
+        "count": 4736,
+        "target_rate": 0.1307,
+        "ks": 0.5051
+      },
+      "2025-05": {
+        "count": 4691,
+        "target_rate": 0.1198,
+        "ks": 0.5017
+      },
+      "2025-06": {
+        "count": 4641,
+        "target_rate": 0.1349,
+        "ks": 0.4842
+      },
+      "2025-07": {
+        "count": 4590,
+        "target_rate": 0.1303,
+        "ks": 0.4984
+      },
+      "2025-08": {
+        "count": 4670,
+        "target_rate": 0.1366,
+        "ks": 0.4925
+      },
+      "2025-09": {
+        "count": 4629,
+        "target_rate": 0.1249,
+        "ks": 0.4534
+      },
+      "2025-10": {
+        "count": 4646,
+        "target_rate": 0.1429,
+        "ks": 0.5056
+      },
+      "2025-11": {
+        "count": 4669,
+        "target_rate": 0.1444,
+        "ks": 0.4948
+      },
+      "2025-12": {
+        "count": 4708,
+        "target_rate": 0.1379,
+        "ks": 0.4926
+      }
+    }
+  }
+}

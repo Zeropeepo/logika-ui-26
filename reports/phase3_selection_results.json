@@ -1,0 +1,1222 @@
+{
+  "group_ablation": {
+    "ecommerce": {
+      "removed_count": 97,
+      "remain_count": 195,
+      "oof_ks": 0.46289870003675193,
+      "delta_ks": -0.031061824185811326
+    },
+    "repayment": {
+      "removed_count": 52,
+      "remain_count": 240,
+      "oof_ks": 0.47617772576704603,
+      "delta_ks": -0.017782798455517224
+    },
+    "bureau": {
+      "removed_count": 58,
+      "remain_count": 234,
+      "oof_ks": 0.4858952661137285,
+      "delta_ks": -0.008065258108834739
+    },
+    "pricing_loan": {
+      "removed_count": 9,
+      "remain_count": 283,
+      "oof_ks": 0.4939789190619607,
+      "delta_ks": 1.8394839397417595e-05
+    },
+    "profile": {
+      "removed_count": 7,
+      "remain_count": 285,
+      "oof_ks": 0.49278897517620157,
+      "delta_ks": -0.0011715490463616862
+    },
+    "composite_flags": {
+      "removed_count": 19,
+      "remain_count": 273,
+      "oof_ks": 0.4947733312999029,
+      "delta_ks": 0.0008128070773396612
+    }
+  },
+  "n_clusters": 124,
+  "selected_feature_count": 132,
+  "selected_features": [
+    "loan_purpose",
+    "region",
+    "employment_type",
+    "housing_status",
+    "cal_hour",
+    "cal_cos_hour",
+    "dependents",
+    "bureau_days_since_available",
+    "hours_to_decision",
+    "cal_month_num",
+    "cal_sin_month",
+    "cal_cos_month",
+    "cal_dow",
+    "cal_is_weekend",
+    "cal_dom",
+    "cal_is_payday_window",
+    "bureau_disparity_A_minus_B",
+    "bureau_disparity_A_minus_C",
+    "ecom_credit_orders",
+    "bureau_life_rev_bal_latest",
+    "ecom_ewallet_orders",
+    "ecom_transfer_orders",
+    "acct_inflow_trend_3m_vs_6m",
+    "acct_outflow_trend_3m_vs_6m",
+    "ecom_cancellation_rate",
+    "ecom_canc_orders_30d",
+    "ecom_canc_orders_90d",
+    "ecom_spend_electronics",
+    "ecom_mean_order_value",
+    "ecom_spend_365d",
+    "ecom_median_order_val",
+    "ecom_cod_share",
+    "ecom_cod_spend_14d",
+    "ecom_cod_spend_30d",
+    "flag_high_cod_high_spend",
+    "ecom_spend_60d",
+    "ecom_orders_60d",
+    "ecom_ratio_spend_90d_365d",
+    "ecom_spending_30d",
+    "ecom_spend_7d",
+    "ecom_orders_14d",
+    "flag_credit_hunger",
+    "ecom_first_order_days",
+    "ecom_gap_std_days",
+    "ecom_completed_orders",
+    "ecom_night_orders",
+    "ecom_weekend_orders",
+    "ecom_payday_orders",
+    "ecom_orders_365d",
+    "ecom_items_personal_care",
+    "ecom_gap_min_days",
+    "ecom_items_home",
+    "ecom_spend_fashion",
+    "ecom_groceries_share",
+    "ecom_spend_groceries",
+    "installment_income_ratio",
+    "prev_rejection_rate",
+    "prev_approval_rate",
+    "prev_cancelled_count",
+    "bureau_max_active_accounts",
+    "total_debt_to_income",
+    "bureau_life_out_bal_mean",
+    "bureau_recalculated_utilization",
+    "bureau_recalculated_util_latest",
+    "interest_principal_ratio",
+    "pricing_rate_residual",
+    "bureau_latest_score_Bureau_B",
+    "bureau_latest_score_Bureau_C",
+    "bureau_score_mean",
+    "bureau_life_inquiries_first",
+    "bureau_inquiry_surge",
+    "bureau_total_inquiries_6m",
+    "bureau_life_inquiries_latest",
+    "bureau_life_inquiries_max",
+    "bureau_lifetime_unique_apps",
+    "cov_has_prev_apps",
+    "bureau_max_days_since_avail",
+    "repay_max_max_dpd",
+    "composite_risk_score",
+    "repay_dpd_ge_90_count",
+    "repay_dpd_ge_60_count",
+    "repay_prop_loans_ever_dpd30",
+    "repay_weighted_underpaid",
+    "repay_weighted_paid_due_ratio",
+    "flag_recent_dpd_low_bureau",
+    "prev_app_recency_days",
+    "repay_installment_count",
+    "prev_approved_count",
+    "prev_app_count",
+    "repay_active_loans_count",
+    "repay_active_monthly_due_60d",
+    "repay_min_days_since_due",
+    "bureau_score_delta_latest_vs_first",
+    "bureau_score_drop_from_max",
+    "bureau_score_std",
+    "bureau_life_score_std",
+    "employment_tenure_months",
+    "age",
+    "acct_observed_months",
+    "acct_balance_trend_3m_vs_6m",
+    "repay_total_amount_paid",
+    "prev_total_requested_amount",
+    "acct_mean_outflows_3m",
+    "prev_mean_approved_amount",
+    "interest_amount",
+    "declared_monthly_income",
+    "income_per_dependent",
+    "acct_mean_balance_3m",
+    "acct_outflow_inflow_ratio",
+    "acct_mean_inflows_3m",
+    "acct_total_inflows_all",
+    "acct_total_outflows_all",
+    "acct_mean_low_balance_days_all",
+    "acct_low_balance_days_3m",
+    "acct_balance_volatility",
+    "income_credits_to_declared_ratio",
+    "bureau_life_delinq_max",
+    "bureau_total_delinquent_12m",
+    "bureau_life_delinq_latest",
+    "bureau_lifetime_providers_count",
+    "cov_has_bureau_B",
+    "bureau_provider_count",
+    "bureau_has_unscored",
+    "cov_has_bureau_C",
+    "bureau_all_unscored",
+    "repay_days_since_last_delay",
+    "bureau_debt_growth",
+    "term_months",
+    "annual_interest_rate",
+    "ecom_spend_30d",
+    "ecom_orders_30d",
+    "bureau_life_score_latest"
+  ],
+  "cluster_details": {
+    "1": {
+      "representative": "cal_hour",
+      "rep_ks": 0.007104235121651314,
+      "members": [
+        "cal_hour",
+        "cal_sin_hour"
+      ]
+    },
+    "2": {
+      "representative": "cal_cos_hour",
+      "rep_ks": 0.006388177005358431,
+      "members": [
+        "cal_cos_hour"
+      ]
+    },
+    "3": {
+      "representative": "dependents",
+      "rep_ks": 0.013434782846156179,
+      "members": [
+        "dependents"
+      ]
+    },
+    "4": {
+      "representative": "bureau_days_since_available",
+      "rep_ks": 0.0017722512277546787,
+      "members": [
+        "bureau_days_since_available",
+        "bureau_min_days_since_avail"
+      ]
+    },
+    "5": {
+      "representative": "hours_to_decision",
+      "rep_ks": 0.00545674677474034,
+      "members": [
+        "hours_to_decision"
+      ]
+    },
+    "6": {
+      "representative": "cal_month_num",
+      "rep_ks": 0.015127803593526723,
+      "members": [
+        "cal_month_num"
+      ]
+    },
+    "7": {
+      "representative": "cal_sin_month",
+      "rep_ks": 0.006548016840088586,
+      "members": [
+        "cal_sin_month"
+      ]
+    },
+    "8": {
+      "representative": "cal_cos_month",
+      "rep_ks": 0.02625684835445502,
+      "members": [
+        "cal_cos_month"
+      ]
+    },
+    "9": {
+      "representative": "cal_dow",
+      "rep_ks": 0.005129480690279464,
+      "members": [
+        "cal_dow"
+      ]
+    },
+    "10": {
+      "representative": "cal_is_weekend",
+      "rep_ks": 0.0014968450624760488,
+      "members": [
+        "cal_is_weekend"
+      ]
+    },
+    "11": {
+      "representative": "cal_dom",
+      "rep_ks": 0.005655398520822308,
+      "members": [
+        "cal_dom"
+      ]
+    },
+    "12": {
+      "representative": "cal_is_payday_window",
+      "rep_ks": 0.004233873361756679,
+      "members": [
+        "cal_is_payday_window"
+      ]
+    },
+    "13": {
+      "representative": "bureau_disparity_A_minus_B",
+      "rep_ks": 0.028124977400942552,
+      "members": [
+        "bureau_disparity_A_minus_B"
+      ]
+    },
+    "14": {
+      "representative": "bureau_disparity_A_minus_C",
+      "rep_ks": 0.010385828217889137,
+      "members": [
+        "bureau_disparity_A_minus_C"
+      ]
+    },
+    "15": {
+      "representative": "ecom_credit_orders",
+      "rep_ks": 0.006530350560829859,
+      "members": [
+        "ecom_credit_orders",
+        "ecom_credit_orders_all"
+      ]
+    },
+    "16": {
+      "representative": "bureau_life_rev_bal_latest",
+      "rep_ks": 0.031021746422953633,
+      "members": [
+        "bureau_total_revolving_limit",
+        "bureau_total_revolving_balance",
+        "bureau_life_rev_bal_latest",
+        "bureau_life_rev_lim_latest"
+      ]
+    },
+    "17": {
+      "representative": "ecom_ewallet_orders",
+      "rep_ks": 0.032142951789848884,
+      "members": [
+        "ecom_ewallet_orders",
+        "ecom_ewallet_orders_all"
+      ]
+    },
+    "18": {
+      "representative": "ecom_transfer_orders",
+      "rep_ks": 0.02078550951125613,
+      "members": [
+        "ecom_transfer_orders",
+        "ecom_transfer_orders_all"
+      ]
+    },
+    "19": {
+      "representative": "acct_inflow_trend_3m_vs_6m",
+      "rep_ks": 0.043285983514395054,
+      "members": [
+        "acct_inflow_trend_3m_vs_6m"
+      ]
+    },
+    "20": {
+      "representative": "acct_outflow_trend_3m_vs_6m",
+      "rep_ks": 0.10453643951870784,
+      "members": [
+        "acct_outflow_trend_3m_vs_6m"
+      ]
+    },
+    "21": {
+      "representative": "ecom_cancellation_rate",
+      "rep_ks": 0.010007293408630713,
+      "members": [
+        "ecom_cancelled_orders",
+        "ecom_cancellation_rate",
+        "ecom_canc_orders_all",
+        "ecom_canc_rate_all"
+      ]
+    },
+    "22": {
+      "representative": "ecom_canc_orders_30d",
+      "rep_ks": 0.08980043957076078,
+      "members": [
+        "ecom_canc_orders_30d",
+        "ecom_canc_rate_30d"
+      ]
+    },
+    "23": {
+      "representative": "ecom_canc_orders_90d",
+      "rep_ks": 0.10969317253131239,
+      "members": [
+        "ecom_canc_orders_90d"
+      ]
+    },
+    "24": {
+      "representative": "ecom_spend_electronics",
+      "rep_ks": 0.056945028995137315,
+      "members": [
+        "ecom_items_electronics",
+        "ecom_electronics_share",
+        "ecom_spend_electronics",
+        "ecom_share_electronics",
+        "ecom_spend_share_electronics"
+      ]
+    },
+    "25": {
+      "representative": "ecom_mean_order_value",
+      "rep_ks": 0.19413802911938727,
+      "members": [
+        "ecom_mean_order_value",
+        "ecom_max_order_value",
+        "ecom_mean_order_val",
+        "ecom_std_order_val",
+        "ecom_max_order_val"
+      ]
+    },
+    "26": {
+      "representative": "ecom_spend_365d",
+      "rep_ks": 0.19853875492456013,
+      "members": [
+        "ecom_total_spending",
+        "ecom_spend_all",
+        "ecom_spend_365d"
+      ]
+    },
+    "27": {
+      "representative": "ecom_median_order_val",
+      "rep_ks": 0.20630271429287594,
+      "members": [
+        "ecom_median_order_val"
+      ]
+    },
+    "28": {
+      "representative": "ecom_cod_share",
+      "rep_ks": 0.08054084534965045,
+      "members": [
+        "ecom_cod_orders",
+        "ecom_cod_share",
+        "ecom_cod_orders_all",
+        "ecom_cod_share_all"
+      ]
+    },
+    "29": {
+      "representative": "ecom_cod_spend_14d",
+      "rep_ks": 0.21056886339042002,
+      "members": [
+        "ecom_cod_orders_7d",
+        "ecom_cod_spend_7d",
+        "ecom_cod_orders_14d",
+        "ecom_cod_spend_14d",
+        "ecom_cod_share_14d",
+        "ecom_cod_share_7d"
+      ]
+    },
+    "30": {
+      "representative": "ecom_cod_spend_30d",
+      "rep_ks": 0.21154084781701754,
+      "members": [
+        "ecom_cod_orders_30d",
+        "ecom_cod_spend_30d",
+        "ecom_cod_orders_90d",
+        "ecom_cod_share_30d",
+        "ecom_cod_spend_share_30d"
+      ]
+    },
+    "31": {
+      "representative": "flag_high_cod_high_spend",
+      "rep_ks": 0.11916536894717522,
+      "members": [
+        "flag_high_cod_high_spend"
+      ]
+    },
+    "32": {
+      "representative": "ecom_spend_60d",
+      "rep_ks": 0.29243269396686533,
+      "members": [
+        "ecom_spending_90d",
+        "ecom_spending_180d",
+        "ecom_spend_60d",
+        "ecom_spend_90d",
+        "ecom_spend_180d"
+      ]
+    },
+    "33": {
+      "representative": "ecom_orders_60d",
+      "rep_ks": 0.2812366268895958,
+      "members": [
+        "ecom_orders_90d",
+        "ecom_orders_180d",
+        "ecom_orders_60d"
+      ]
+    },
+    "34": {
+      "representative": "ecom_ratio_spend_90d_365d",
+      "rep_ks": 0.2462052906051556,
+      "members": [
+        "ecom_ratio_spend_90d_365d"
+      ]
+    },
+    "35": {
+      "representative": "ecom_spending_30d",
+      "rep_ks": 0.2918349773171147,
+      "members": [
+        "ecom_spending_30d",
+        "ecom_orders_30d",
+        "ecom_spend_30d",
+        "ecom_ratio_spend_30d_90d",
+        "ecom_ratio_spend_30d_180d",
+        "ecom_ratio_orders_30d_90d",
+        "rank_ecom_spend_30d",
+        "rank_ecom_orders_30d",
+        "ratio_ecom_spend_30d_income",
+        "ratio_ecom_spend_30d_installment"
+      ]
+    },
+    "36": {
+      "representative": "ecom_spend_7d",
+      "rep_ks": 0.2806673536449744,
+      "members": [
+        "ecom_spend_7d",
+        "ecom_orders_7d",
+        "ecom_ratio_spend_7d_30d",
+        "ecom_ratio_orders_7d_30d"
+      ]
+    },
+    "37": {
+      "representative": "ecom_orders_14d",
+      "rep_ks": 0.28809462259481544,
+      "members": [
+        "ecom_recency_days",
+        "ecom_latest_order_days",
+        "ecom_spend_14d",
+        "ecom_orders_14d",
+        "ecom_ratio_spend_14d_30d",
+        "ecom_ratio_orders_14d_30d"
+      ]
+    },
+    "38": {
+      "representative": "flag_credit_hunger",
+      "rep_ks": 0.1651098857958334,
+      "members": [
+        "flag_credit_hunger"
+      ]
+    },
+    "39": {
+      "representative": "ecom_first_order_days",
+      "rep_ks": 0.024063099873748495,
+      "members": [
+        "ecom_first_order_days",
+        "ecom_history_length_days"
+      ]
+    },
+    "40": {
+      "representative": "ecom_gap_std_days",
+      "rep_ks": 0.06790282213090487,
+      "members": [
+        "ecom_gap_mean_days",
+        "ecom_gap_std_days",
+        "ecom_gap_max_days"
+      ]
+    },
+    "41": {
+      "representative": "ecom_completed_orders",
+      "rep_ks": 0.017895622687405077,
+      "members": [
+        "ecom_total_orders",
+        "ecom_completed_orders",
+        "ecom_item_total_items",
+        "ecom_total_orders_all",
+        "ecom_comp_orders_all",
+        "ecom_items_total"
+      ]
+    },
+    "42": {
+      "representative": "ecom_night_orders",
+      "rep_ks": 0.01549135684155556,
+      "members": [
+        "ecom_night_orders"
+      ]
+    },
+    "43": {
+      "representative": "ecom_weekend_orders",
+      "rep_ks": 0.013005582678133898,
+      "members": [
+        "ecom_weekend_orders"
+      ]
+    },
+    "44": {
+      "representative": "ecom_payday_orders",
+      "rep_ks": 0.014533044654506444,
+      "members": [
+        "ecom_payday_orders"
+      ]
+    },
+    "45": {
+      "representative": "ecom_orders_365d",
+      "rep_ks": 0.07658215384706762,
+      "members": [
+        "ecom_orders_365d"
+      ]
+    },
+    "46": {
+      "representative": "ecom_items_personal_care",
+      "rep_ks": 0.006961219983585343,
+      "members": [
+        "ecom_items_personal_care"
+      ]
+    },
+    "47": {
+      "representative": "ecom_gap_min_days",
+      "rep_ks": 0.01910869966167389,
+      "members": [
+        "ecom_gap_min_days"
+      ]
+    },
+    "48": {
+      "representative": "ecom_items_home",
+      "rep_ks": 0.010011143127358901,
+      "members": [
+        "ecom_items_home"
+      ]
+    },
+    "49": {
+      "representative": "ecom_spend_fashion",
+      "rep_ks": 0.08811971566659094,
+      "members": [
+        "ecom_items_fashion",
+        "ecom_fashion_share",
+        "ecom_spend_fashion",
+        "ecom_share_fashion"
+      ]
+    },
+    "50": {
+      "representative": "ecom_groceries_share",
+      "rep_ks": 0.012206291347711395,
+      "members": [
+        "ecom_groceries_share",
+        "ecom_share_groceries"
+      ]
+    },
+    "51": {
+      "representative": "ecom_spend_groceries",
+      "rep_ks": 0.11002670353744343,
+      "members": [
+        "ecom_items_groceries",
+        "ecom_spend_groceries"
+      ]
+    },
+    "52": {
+      "representative": "installment_income_ratio",
+      "rep_ks": 0.0777585941575587,
+      "members": [
+        "installment_income_ratio",
+        "loan_income_ratio",
+        "rank_installment_income"
+      ]
+    },
+    "53": {
+      "representative": "prev_rejection_rate",
+      "rep_ks": 0.08545517475409548,
+      "members": [
+        "prev_rejected_count",
+        "prev_rejection_rate"
+      ]
+    },
+    "54": {
+      "representative": "prev_approval_rate",
+      "rep_ks": 0.07550272331867547,
+      "members": [
+        "prev_approval_rate",
+        "prev_ratio_approved_requested"
+      ]
+    },
+    "55": {
+      "representative": "prev_cancelled_count",
+      "rep_ks": 0.004763461813905301,
+      "members": [
+        "prev_cancelled_count"
+      ]
+    },
+    "56": {
+      "representative": "bureau_max_active_accounts",
+      "rep_ks": 0.07711773770579933,
+      "members": [
+        "bureau_total_active_accounts",
+        "bureau_max_active_accounts"
+      ]
+    },
+    "57": {
+      "representative": "total_debt_to_income",
+      "rep_ks": 0.11246268000680099,
+      "members": [
+        "total_debt_to_income",
+        "ratio_total_debt_annual_income"
+      ]
+    },
+    "58": {
+      "representative": "bureau_life_out_bal_mean",
+      "rep_ks": 0.11010319713558808,
+      "members": [
+        "bureau_total_outstanding_balance",
+        "bureau_life_out_bal_max",
+        "bureau_life_out_bal_mean",
+        "bureau_life_out_bal_first",
+        "bureau_life_out_bal_latest"
+      ]
+    },
+    "59": {
+      "representative": "bureau_recalculated_utilization",
+      "rep_ks": 0.07172860791939895,
+      "members": [
+        "bureau_recalculated_utilization"
+      ]
+    },
+    "60": {
+      "representative": "bureau_recalculated_util_latest",
+      "rep_ks": 0.057709780663040555,
+      "members": [
+        "bureau_recalculated_util_latest"
+      ]
+    },
+    "61": {
+      "representative": "interest_principal_ratio",
+      "rep_ks": 0.23020428247267005,
+      "members": [
+        "annual_interest_rate",
+        "monthly_interest_rate",
+        "interest_principal_ratio",
+        "pricing_predicted_rate",
+        "rank_interest_rate"
+      ]
+    },
+    "62": {
+      "representative": "pricing_rate_residual",
+      "rep_ks": 0.17365661087271395,
+      "members": [
+        "pricing_rate_residual"
+      ]
+    },
+    "63": {
+      "representative": "bureau_latest_score_Bureau_B",
+      "rep_ks": 0.21465279768458229,
+      "members": [
+        "bureau_score_Bureau_B",
+        "bureau_latest_score_Bureau_B"
+      ]
+    },
+    "64": {
+      "representative": "bureau_latest_score_Bureau_C",
+      "rep_ks": 0.21576729647282594,
+      "members": [
+        "bureau_score_Bureau_C",
+        "bureau_latest_score_Bureau_C"
+      ]
+    },
+    "65": {
+      "representative": "bureau_score_mean",
+      "rep_ks": 0.2524768858166696,
+      "members": [
+        "bureau_score_min",
+        "bureau_score_mean",
+        "bureau_score_max",
+        "bureau_score_Bureau_A",
+        "bureau_life_score_min",
+        "bureau_life_score_max",
+        "bureau_life_score_mean",
+        "bureau_life_score_first",
+        "bureau_life_score_latest",
+        "bureau_latest_score_Bureau_A",
+        "rank_bureau_score_inv"
+      ]
+    },
+    "66": {
+      "representative": "bureau_life_inquiries_first",
+      "rep_ks": 0.04412898497552675,
+      "members": [
+        "bureau_life_inquiries_first"
+      ]
+    },
+    "67": {
+      "representative": "bureau_inquiry_surge",
+      "rep_ks": 0.016637861850499536,
+      "members": [
+        "bureau_inquiry_surge"
+      ]
+    },
+    "68": {
+      "representative": "bureau_total_inquiries_6m",
+      "rep_ks": 0.05808501695539403,
+      "members": [
+        "bureau_total_inquiries_6m",
+        "bureau_max_inquiries_6m"
+      ]
+    },
+    "69": {
+      "representative": "bureau_life_inquiries_latest",
+      "rep_ks": 0.03502390114564968,
+      "members": [
+        "bureau_life_inquiries_latest"
+      ]
+    },
+    "70": {
+      "representative": "bureau_life_inquiries_max",
+      "rep_ks": 0.09035296636503354,
+      "members": [
+        "bureau_life_inquiries_max"
+      ]
+    },
+    "71": {
+      "representative": "bureau_lifetime_unique_apps",
+      "rep_ks": 0.06368706366061638,
+      "members": [
+        "bureau_lifetime_obs_count",
+        "bureau_lifetime_unique_apps"
+      ]
+    },
+    "72": {
+      "representative": "cov_has_prev_apps",
+      "rep_ks": 0.047603319612807116,
+      "members": [
+        "cov_has_prev_apps",
+        "cov_has_repayment",
+        "cov_has_account",
+        "cov_source_count"
+      ]
+    },
+    "73": {
+      "representative": "bureau_max_days_since_avail",
+      "rep_ks": 0.047613849828081756,
+      "members": [
+        "bureau_max_days_since_avail"
+      ]
+    },
+    "74": {
+      "representative": "repay_max_max_dpd",
+      "rep_ks": 0.27441314650359705,
+      "members": [
+        "repay_max_max_dpd",
+        "repay_max_max_dpd_all",
+        "rank_repay_max_dpd"
+      ]
+    },
+    "75": {
+      "representative": "composite_risk_score",
+      "rep_ks": 0.3871933587531965,
+      "members": [
+        "composite_risk_score"
+      ]
+    },
+    "76": {
+      "representative": "repay_dpd_ge_90_count",
+      "rep_ks": 0.11390355113270045,
+      "members": [
+        "repay_dpd_ge_90_count",
+        "repay_count_dpd_ge_90",
+        "repay_prop_loans_ever_dpd90"
+      ]
+    },
+    "77": {
+      "representative": "repay_dpd_ge_60_count",
+      "rep_ks": 0.16139748065747161,
+      "members": [
+        "repay_dpd_ge_60_count",
+        "repay_count_dpd_ge_60",
+        "repay_prop_loans_ever_dpd60"
+      ]
+    },
+    "78": {
+      "representative": "repay_prop_loans_ever_dpd30",
+      "rep_ks": 0.2107747172751525,
+      "members": [
+        "repay_dpd_ge_30_count",
+        "repay_count_dpd_ge_30",
+        "repay_prop_loans_ever_dpd30"
+      ]
+    },
+    "79": {
+      "representative": "repay_weighted_underpaid",
+      "rep_ks": 0.24398904717811343,
+      "members": [
+        "repay_ontime_ratio",
+        "repay_underpaid_ratio",
+        "repay_max_dpd",
+        "repay_mean_dpd",
+        "repay_recent6_max_dpd",
+        "repay_recent6_mean_dpd",
+        "repay_recent6_underpaid_ratio",
+        "repay_recent6_ontime_ratio",
+        "repay_total_shortage",
+        "repay_weighted_ontime",
+        "repay_weighted_underpaid",
+        "repay_max_dpd_all",
+        "repay_mean_dpd_all",
+        "repay_ratio_underpaid_all",
+        "repay_r3_max_dpd",
+        "repay_r3_mean_dpd",
+        "repay_r3_underpaid_ratio",
+        "repay_r3_ontime_ratio",
+        "repay_r6_max_dpd",
+        "repay_r6_mean_dpd",
+        "repay_r6_underpaid_ratio",
+        "repay_r6_ontime_ratio"
+      ]
+    },
+    "80": {
+      "representative": "repay_weighted_paid_due_ratio",
+      "rep_ks": 0.23529758380541632,
+      "members": [
+        "repay_paid_over_due_ratio",
+        "repay_weighted_paid_due_ratio"
+      ]
+    },
+    "81": {
+      "representative": "flag_recent_dpd_low_bureau",
+      "rep_ks": 0.16856302437561743,
+      "members": [
+        "flag_recent_dpd_low_bureau"
+      ]
+    },
+    "82": {
+      "representative": "prev_app_recency_days",
+      "rep_ks": 0.0797717727463183,
+      "members": [
+        "prev_recency_days",
+        "prev_app_recency_days"
+      ]
+    },
+    "83": {
+      "representative": "repay_installment_count",
+      "rep_ks": 0.036985228509262114,
+      "members": [
+        "repay_installment_count",
+        "repay_inst_total"
+      ]
+    },
+    "84": {
+      "representative": "prev_approved_count",
+      "rep_ks": 0.02257464803272735,
+      "members": [
+        "prev_approved_count",
+        "prev_originated_loans_count",
+        "repay_loans_count",
+        "repay_loans_total"
+      ]
+    },
+    "85": {
+      "representative": "prev_app_count",
+      "rep_ks": 0.041367516004862215,
+      "members": [
+        "prev_app_count"
+      ]
+    },
+    "86": {
+      "representative": "repay_active_loans_count",
+      "rep_ks": 0.04171112513644448,
+      "members": [
+        "repay_active_loans_count",
+        "repay_active_loans_60d"
+      ]
+    },
+    "87": {
+      "representative": "repay_active_monthly_due_60d",
+      "rep_ks": 0.053462280270717866,
+      "members": [
+        "repay_active_monthly_due_60d"
+      ]
+    },
+    "88": {
+      "representative": "repay_min_days_since_due",
+      "rep_ks": 0.04673291803075419,
+      "members": [
+        "repay_min_days_since_due"
+      ]
+    },
+    "89": {
+      "representative": "bureau_score_delta_latest_vs_first",
+      "rep_ks": 0.03979512151644993,
+      "members": [
+        "bureau_score_delta_latest_vs_first"
+      ]
+    },
+    "90": {
+      "representative": "bureau_score_drop_from_max",
+      "rep_ks": 0.04802800583782191,
+      "members": [
+        "bureau_score_drop_from_max"
+      ]
+    },
+    "91": {
+      "representative": "bureau_score_std",
+      "rep_ks": 0.008098316307778353,
+      "members": [
+        "bureau_score_std"
+      ]
+    },
+    "92": {
+      "representative": "bureau_life_score_std",
+      "rep_ks": 0.038513059112721404,
+      "members": [
+        "bureau_life_score_std"
+      ]
+    },
+    "93": {
+      "representative": "employment_tenure_months",
+      "rep_ks": 0.012417973713553687,
+      "members": [
+        "employment_tenure_months",
+        "tenure_age_ratio"
+      ]
+    },
+    "94": {
+      "representative": "age",
+      "rep_ks": 0.010614763026920895,
+      "members": [
+        "age"
+      ]
+    },
+    "95": {
+      "representative": "acct_observed_months",
+      "rep_ks": 0.027275844906280766,
+      "members": [
+        "acct_observed_months"
+      ]
+    },
+    "96": {
+      "representative": "acct_balance_trend_3m_vs_6m",
+      "rep_ks": 0.07649445711533398,
+      "members": [
+        "acct_balance_trend_3m_vs_6m"
+      ]
+    },
+    "97": {
+      "representative": "repay_total_amount_paid",
+      "rep_ks": 0.05659667292040782,
+      "members": [
+        "repay_total_amount_due",
+        "repay_total_amount_paid",
+        "repay_total_due",
+        "repay_total_paid"
+      ]
+    },
+    "98": {
+      "representative": "prev_total_requested_amount",
+      "rep_ks": 0.05484254006173539,
+      "members": [
+        "prev_total_approved_amount",
+        "prev_total_requested_amount"
+      ]
+    },
+    "99": {
+      "representative": "acct_mean_outflows_3m",
+      "rep_ks": 0.10795134694868258,
+      "members": [
+        "acct_mean_outflows_all",
+        "acct_mean_outflows_3m",
+        "acct_mean_outflows_6m",
+        "acct_mean_outflows_12m"
+      ]
+    },
+    "100": {
+      "representative": "prev_mean_approved_amount",
+      "rep_ks": 0.032457395911391074,
+      "members": [
+        "prev_mean_approved_amount"
+      ]
+    },
+    "101": {
+      "representative": "interest_amount",
+      "rep_ks": 0.10311939178770246,
+      "members": [
+        "loan_amount",
+        "proposed_monthly_installment",
+        "total_repayment_amount",
+        "interest_amount"
+      ]
+    },
+    "102": {
+      "representative": "declared_monthly_income",
+      "rep_ks": 0.02364767105727439,
+      "members": [
+        "declared_monthly_income"
+      ]
+    },
+    "103": {
+      "representative": "income_per_dependent",
+      "rep_ks": 0.02880590292152463,
+      "members": [
+        "income_per_dependent"
+      ]
+    },
+    "104": {
+      "representative": "acct_mean_balance_3m",
+      "rep_ks": 0.030826683574547875,
+      "members": [
+        "acct_mean_balance_all",
+        "acct_std_balance_all",
+        "acct_mean_balance_3m",
+        "acct_mean_balance_6m",
+        "acct_mean_balance_12m"
+      ]
+    },
+    "105": {
+      "representative": "acct_outflow_inflow_ratio",
+      "rep_ks": 0.04519345306956657,
+      "members": [
+        "acct_outflow_inflow_ratio"
+      ]
+    },
+    "106": {
+      "representative": "acct_mean_inflows_3m",
+      "rep_ks": 0.03979611263644767,
+      "members": [
+        "acct_mean_inflows_all",
+        "acct_mean_income_credits_all",
+        "acct_mean_inflows_3m",
+        "acct_mean_income_credits_3m",
+        "acct_mean_inflows_6m",
+        "acct_mean_income_credits_6m",
+        "acct_mean_inflows_12m",
+        "acct_mean_income_credits_12m"
+      ]
+    },
+    "107": {
+      "representative": "acct_total_inflows_all",
+      "rep_ks": 0.02513853114600939,
+      "members": [
+        "acct_total_inflows_all"
+      ]
+    },
+    "108": {
+      "representative": "acct_total_outflows_all",
+      "rep_ks": 0.041885115382651716,
+      "members": [
+        "acct_total_outflows_all"
+      ]
+    },
+    "109": {
+      "representative": "acct_mean_low_balance_days_all",
+      "rep_ks": 0.019600013493837998,
+      "members": [
+        "acct_total_low_balance_days_all",
+        "acct_mean_low_balance_days_all",
+        "acct_low_balance_days_12m"
+      ]
+    },
+    "110": {
+      "representative": "acct_low_balance_days_3m",
+      "rep_ks": 0.02276060648760958,
+      "members": [
+        "acct_low_balance_days_3m",
+        "acct_low_balance_days_6m"
+      ]
+    },
+    "111": {
+      "representative": "acct_balance_volatility",
+      "rep_ks": 0.0313593114613564,
+      "members": [
+        "acct_balance_volatility"
+      ]
+    },
+    "112": {
+      "representative": "income_credits_to_declared_ratio",
+      "rep_ks": 0.04014473127103624,
+      "members": [
+        "income_credits_to_declared_ratio"
+      ]
+    },
+    "113": {
+      "representative": "bureau_life_delinq_max",
+      "rep_ks": 0.07187353226756599,
+      "members": [
+        "bureau_life_delinq_max",
+        "bureau_life_ever_delinquent"
+      ]
+    },
+    "114": {
+      "representative": "bureau_total_delinquent_12m",
+      "rep_ks": 0.052245290980668435,
+      "members": [
+        "bureau_total_delinquent_12m",
+        "bureau_max_delinquent_12m"
+      ]
+    },
+    "115": {
+      "representative": "bureau_life_delinq_latest",
+      "rep_ks": 0.028572544587450177,
+      "members": [
+        "bureau_life_delinq_latest"
+      ]
+    },
+    "116": {
+      "representative": "bureau_lifetime_providers_count",
+      "rep_ks": 0.017928632199752353,
+      "members": [
+        "bureau_lifetime_providers_count"
+      ]
+    },
+    "117": {
+      "representative": "cov_has_bureau_B",
+      "rep_ks": 0.01401605212036465,
+      "members": [
+        "cov_has_bureau_B"
+      ]
+    },
+    "118": {
+      "representative": "bureau_provider_count",
+      "rep_ks": 0.005412798427470222,
+      "members": [
+        "bureau_provider_count"
+      ]
+    },
+    "119": {
+      "representative": "bureau_has_unscored",
+      "rep_ks": 0.004762277686329003,
+      "members": [
+        "bureau_has_unscored"
+      ]
+    },
+    "120": {
+      "representative": "cov_has_bureau_C",
+      "rep_ks": 0.006324027198203699,
+      "members": [
+        "cov_has_bureau_C"
+      ]
+    },
+    "121": {
+      "representative": "bureau_all_unscored",
+      "rep_ks": 0.00010994824508737304,
+      "members": [
+        "bureau_all_unscored"
+      ]
+    },
+    "122": {
+      "representative": "repay_days_since_last_delay",
+      "rep_ks": 0.11900207062529489,
+      "members": [
+        "repay_days_since_last_delay"
+      ]
+    },
+    "123": {
+      "representative": "bureau_debt_growth",
+      "rep_ks": 0.04025582886755963,
+      "members": [
+        "bureau_debt_growth"
+      ]
+    },
+    "124": {
+      "representative": "term_months",
+      "rep_ks": 0.0,
+      "members": [
+        "term_months"
+      ]
+    }
+  },
+  "lgb_selected_15fold": {
+    "mean_ks": 0.49246155441309647,
+    "std_ks": 0.009456649189762982,
+    "oof_ks": 0.4938612226928205,
+    "oof_auc": 0.8269816321521039
+  },
+  "lr_selected_15fold": {
+    "mean_ks": 0.05151848176218553,
+    "std_ks": 0.11509057170832802,
+    "oof_ks": 0.4864023770076116,
+    "oof_auc": 0.8250268061879156
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "rows": {
+    "train": 70000,
+    "test": 30000
+  },
+  "target_rate": 0.13581428571428572,
+  "new_features": 39,
+  "views_before_fold_cleaning": {
+    "compact": 50,
+    "enhanced": 89,
+    "wide": 437
+  },
+  "populations_train": {
+    "full": 46312,
+    "thin": 21000,
+    "prev_no_repay": 2688
+  },
+  "populations_test": {
+    "full": 19845,
+    "thin": 9000,
+    "prev_no_repay": 1155
+  },
+  "configurations": 52,
+  "archive_sha256": "7968d217d33b26b4270f04e703731b5f3ebcf1496d19dc6eb207f7e5a5ab9335",
+  "status": "Prepared inputs and CPU plumbing checked. No pretrained GPU benchmark of this runner."
+}

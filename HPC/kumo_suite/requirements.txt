@@ -1,0 +1,9 @@
+# Install the CUDA wheel first, then this file; the pin prevents replacement.
+torch==2.7.1
+structured-data-models==0.2.1
+numpy==2.2.6
+pandas==2.2.3
+polars==1.32.3
+pyarrow==20.0.0
+scipy==1.15.3
+scikit-learn==1.6.1

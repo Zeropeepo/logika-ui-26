@@ -1,0 +1,208 @@
+{
+  "top_20_univariate_signals": [
+    {
+      "feature": "ecom_spending_30d",
+      "ks": 0.2918,
+      "auc": 0.696
+    },
+    {
+      "feature": "ecom_orders_30d",
+      "ks": 0.2888,
+      "auc": 0.6928
+    },
+    {
+      "feature": "ecom_spending_90d",
+      "ks": 0.2856,
+      "auc": 0.6939
+    },
+    {
+      "feature": "ecom_recency_days",
+      "ks": 0.2784,
+      "auc": 0.6865
+    },
+    {
+      "feature": "repay_max_max_dpd",
+      "ks": 0.2744,
+      "auc": 0.6822
+    },
+    {
+      "feature": "ecom_orders_90d",
+      "ks": 0.2576,
+      "auc": 0.6798
+    },
+    {
+      "feature": "ecom_spending_180d",
+      "ks": 0.2546,
+      "auc": 0.6743
+    },
+    {
+      "feature": "bureau_score_mean",
+      "ks": 0.2525,
+      "auc": 0.6745
+    },
+    {
+      "feature": "bureau_score_max",
+      "ks": 0.2471,
+      "auc": 0.6703
+    },
+    {
+      "feature": "bureau_score_min",
+      "ks": 0.2453,
+      "auc": 0.6705
+    },
+    {
+      "feature": "repay_underpaid_ratio",
+      "ks": 0.2412,
+      "auc": 0.6324
+    },
+    {
+      "feature": "repay_ontime_ratio",
+      "ks": 0.2392,
+      "auc": 0.6313
+    },
+    {
+      "feature": "repay_mean_dpd",
+      "ks": 0.2357,
+      "auc": 0.6323
+    },
+    {
+      "feature": "repay_paid_over_due_ratio",
+      "ks": 0.235,
+      "auc": 0.6547
+    },
+    {
+      "feature": "repay_recent6_underpaid_ratio",
+      "ks": 0.2332,
+      "auc": 0.6307
+    },
+    {
+      "feature": "repay_max_dpd",
+      "ks": 0.2319,
+      "auc": 0.6304
+    },
+    {
+      "feature": "repay_recent6_max_dpd",
+      "ks": 0.2318,
+      "auc": 0.6296
+    },
+    {
+      "feature": "repay_recent6_mean_dpd",
+      "ks": 0.2318,
+      "auc": 0.6306
+    },
+    {
+      "feature": "repay_recent6_ontime_ratio",
+      "ks": 0.2318,
+      "auc": 0.6297
+    },
+    {
+      "feature": "bureau_score_Bureau_A",
+      "ks": 0.2306,
+      "auc": 0.6622
+    }
+  ],
+  "high_correlation_pairs": [
+    {
+      "feat_1": "interest_principal_ratio",
+      "feat_2": "annual_interest_rate",
+      "abs_corr": 1.0
+    },
+    {
+      "feat_1": "interest_principal_ratio",
+      "feat_2": "monthly_interest_rate",
+      "abs_corr": 1.0
+    },
+    {
+      "feat_1": "annual_interest_rate",
+      "feat_2": "monthly_interest_rate",
+      "abs_corr": 1.0
+    },
+    {
+      "feat_1": "repay_recent6_underpaid_ratio",
+      "feat_2": "repay_recent6_ontime_ratio",
+      "abs_corr": 0.9959
+    },
+    {
+      "feat_1": "repay_underpaid_ratio",
+      "feat_2": "repay_ontime_ratio",
+      "abs_corr": 0.9934
+    },
+    {
+      "feat_1": "bureau_score_mean",
+      "feat_2": "bureau_score_min",
+      "abs_corr": 0.9754
+    },
+    {
+      "feat_1": "bureau_score_mean",
+      "feat_2": "bureau_score_max",
+      "abs_corr": 0.9753
+    },
+    {
+      "feat_1": "repay_dpd_ge_30_count",
+      "feat_2": "repay_dpd_ge_60_count",
+      "abs_corr": 0.9575
+    },
+    {
+      "feat_1": "repay_underpaid_ratio",
+      "feat_2": "repay_paid_over_due_ratio",
+      "abs_corr": 0.9427
+    },
+    {
+      "feat_1": "repay_ontime_ratio",
+      "feat_2": "repay_paid_over_due_ratio",
+      "abs_corr": 0.9375
+    },
+    {
+      "feat_1": "repay_recent6_max_dpd",
+      "feat_2": "repay_recent6_mean_dpd",
+      "abs_corr": 0.9235
+    },
+    {
+      "feat_1": "bureau_score_mean",
+      "feat_2": "bureau_score_Bureau_A",
+      "abs_corr": 0.9209
+    },
+    {
+      "feat_1": "bureau_score_max",
+      "feat_2": "bureau_score_min",
+      "abs_corr": 0.9092
+    },
+    {
+      "feat_1": "ecom_spending_90d",
+      "feat_2": "ecom_spending_180d",
+      "abs_corr": 0.9004
+    },
+    {
+      "feat_1": "bureau_score_max",
+      "feat_2": "bureau_score_Bureau_A",
+      "abs_corr": 0.8985
+    }
+  ],
+  "segment_comparison": {
+    "bureau_score_mean": {
+      "bad_median": 641.3333333333334,
+      "good_median": 672.3333333333334
+    },
+    "annual_interest_rate": {
+      "bad_median": 0.24,
+      "good_median": 0.2
+    },
+    "repay_max_dpd": {
+      "bad_median": 0.0,
+      "good_median": 0.0
+    },
+    "installment_income_ratio": {
+      "bad_median": 0.25141820807825505,
+      "good_median": 0.2313217174140668
+    },
+    "acct_outflow_inflow_ratio": {
+      "bad_median": 0.8386144609359226,
+      "good_median": 0.8673885786543473
+    },
+    "ecom_cod_share": {
+      "bad_median": 0.4883720930232558,
+      "good_median": 0.42592592592592593
+    }
+  },
+  "recommended_cv_scheme": "Stratified 5-Fold Cross Validation (Seed 42) + Isolated 20% Stratified Holdout Set. Reason: Random customer-level split across 2025, zero customer overlap, identical train/test distributions (Adversarial AUC 0.5052)."
+}

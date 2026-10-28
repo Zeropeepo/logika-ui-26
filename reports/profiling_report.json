@@ -1,0 +1,1112 @@
+{
+  "tables": {
+    "train_applications": {
+      "n_rows": 70000,
+      "n_cols": 10,
+      "mem_mb": 6.89,
+      "columns": {
+        "application_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 70000
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 70000
+        },
+        "application_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 69893,
+          "date_range": {
+            "min": "2024-12-27 11:26:46",
+            "max": "2025-12-28 20:40:48"
+          }
+        },
+        "decision_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 61512,
+          "date_range": {
+            "min": "2025-01-01 08:00:00",
+            "max": "2025-12-28 20:59:00"
+          }
+        },
+        "loan_amount": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1270,
+          "stats": {
+            "min": 1000000.0,
+            "p1": 3500000.0,
+            "p50": 19000000.0,
+            "p99": 89900000.0,
+            "max": 264500000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "term_months": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1,
+          "stats": {
+            "min": 12.0,
+            "p1": 12.0,
+            "p50": 12.0,
+            "p99": 12.0,
+            "max": 12.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "annual_interest_rate": {
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "stats": {
+            "min": 0.16,
+            "p1": 0.16,
+            "p50": 0.2,
+            "p99": 0.28,
+            "max": 0.32,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "proposed_monthly_installment": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 4041,
+          "stats": {
+            "min": 90731.0,
+            "p1": 324221.0,
+            "p50": 1769320.0,
+            "p99": 8419824.0,
+            "max": 25011014.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "loan_purpose": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "categories": {
+            "medical": 13999,
+            "household": 14006,
+            "home_improvement": 14143,
+            "working_capital": 13951,
+            "education": 13901
+          }
+        },
+        "target": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 2,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 1.0,
+            "max": 1.0,
+            "zero_count": 60493,
+            "neg_count": 0
+          }
+        }
+      }
+    },
+    "test_applications": {
+      "n_rows": 30000,
+      "n_cols": 9,
+      "mem_mb": 2.72,
+      "columns": {
+        "application_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 30000
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 30000
+        },
+        "application_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 29978,
+          "date_range": {
+            "min": "2024-12-27 18:14:37",
+            "max": "2025-12-28 20:14:22"
+          }
+        },
+        "decision_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 28335,
+          "date_range": {
+            "min": "2025-01-01 08:07:00",
+            "max": "2025-12-28 20:52:00"
+          }
+        },
+        "loan_amount": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1078,
+          "stats": {
+            "min": 1000000.0,
+            "p1": 3400000.0,
+            "p50": 19000000.0,
+            "p99": 88300000.0,
+            "max": 232700000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "term_months": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1,
+          "stats": {
+            "min": 12.0,
+            "p1": 12.0,
+            "p50": 12.0,
+            "p99": 12.0,
+            "max": 12.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "annual_interest_rate": {
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "stats": {
+            "min": 0.16,
+            "p1": 0.16,
+            "p50": 0.2,
+            "p99": 0.28,
+            "max": 0.32,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "proposed_monthly_installment": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3196,
+          "stats": {
+            "min": 94560.0,
+            "p1": 317559.0,
+            "p50": 1768265.0,
+            "p99": 8290789.0,
+            "max": 21556050.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "loan_purpose": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "categories": {
+            "home_improvement": 6027,
+            "working_capital": 6021,
+            "medical": 5844,
+            "household": 5989,
+            "education": 6119
+          }
+        }
+      }
+    },
+    "customer_profiles": {
+      "n_rows": 100000,
+      "n_cols": 8,
+      "mem_mb": 7.13,
+      "columns": {
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 100000
+        },
+        "age": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 38,
+          "stats": {
+            "min": 23.0,
+            "p1": 23.0,
+            "p50": 42.0,
+            "p99": 60.0,
+            "max": 60.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "region": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "categories": {
+            "Region_B": 19943,
+            "Region_D": 19966,
+            "Region_E": 20248,
+            "Region_C": 19877,
+            "Region_A": 19966
+          }
+        },
+        "employment_type": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3,
+          "categories": {
+            "self_employed": 29927,
+            "variable_income": 22043,
+            "salaried": 48030
+          }
+        },
+        "employment_tenure_months": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 260,
+          "stats": {
+            "min": 3.0,
+            "p1": 6.0,
+            "p50": 44.0,
+            "p99": 160.0,
+            "max": 297.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "declared_monthly_income": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 99719,
+          "stats": {
+            "min": 490493.0,
+            "p1": 1703523.0,
+            "p50": 7775115.0,
+            "p99": 31363080.0,
+            "max": 91954431.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "dependents": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 2.0,
+            "p99": 4.0,
+            "max": 4.0,
+            "zero_count": 20021,
+            "neg_count": 0
+          }
+        },
+        "housing_status": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3,
+          "categories": {
+            "owned": 27930,
+            "rented": 43032,
+            "family": 29038
+          }
+        }
+      }
+    },
+    "previous_applications": {
+      "n_rows": 201984,
+      "n_cols": 11,
+      "mem_mb": 22.09,
+      "columns": {
+        "application_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 201984
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 70000
+        },
+        "application_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 201680,
+          "date_range": {
+            "min": "2023-01-02 19:43:00",
+            "max": "2025-12-12 15:15:17"
+          }
+        },
+        "decision_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 179930,
+          "date_range": {
+            "min": "2023-01-04 13:33:00",
+            "max": "2025-12-12 17:10:00"
+          }
+        },
+        "requested_amount": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1468,
+          "stats": {
+            "min": 1000000.0,
+            "p1": 3600000.0,
+            "p50": 19300000.0,
+            "p99": 86800000.0,
+            "max": 272400000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "term_months": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3,
+          "stats": {
+            "min": 6.0,
+            "p1": 6.0,
+            "p50": 12.0,
+            "p99": 18.0,
+            "max": 18.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "decision": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3,
+          "categories": {
+            "rejected": 24269,
+            "cancelled": 18392,
+            "approved": 159323
+          }
+        },
+        "loan_id": {
+          "dtype": "String",
+          "null_count": 42661,
+          "null_pct": 21.121,
+          "n_unique": 159324
+        },
+        "approved_amount": {
+          "dtype": "Int64",
+          "null_count": 42661,
+          "null_pct": 21.121,
+          "n_unique": 1384,
+          "stats": {
+            "min": 800000.0,
+            "p1": 3400000.0,
+            "p50": 18300000.0,
+            "p99": 84300000.0,
+            "max": 272400000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "annual_interest_rate": {
+          "dtype": "Float64",
+          "null_count": 42661,
+          "null_pct": 21.121,
+          "n_unique": 6,
+          "stats": {
+            "min": 0.16,
+            "p1": 0.16,
+            "p50": 0.2,
+            "p99": 0.28,
+            "max": 0.32,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "scheduled_monthly_installment": {
+          "dtype": "Int64",
+          "null_count": 42661,
+          "null_pct": 21.121,
+          "n_unique": 10469,
+          "stats": {
+            "min": 58287.0,
+            "p1": 278482.0,
+            "p50": 1818185.0,
+            "p99": 11229546.0,
+            "max": 37642447.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        }
+      }
+    },
+    "repayment_history": {
+      "n_rows": 1361341,
+      "n_cols": 9,
+      "mem_mb": 132.59,
+      "columns": {
+        "loan_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 155901
+        },
+        "installment_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1361341
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 66157
+        },
+        "due_date": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 660877,
+          "date_range": {
+            "min": "2023-02-04 13:33:00",
+            "max": "2025-12-28 15:08:00"
+          }
+        },
+        "amount_due": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 18653,
+          "stats": {
+            "min": 58287.0,
+            "p1": 257712.0,
+            "p50": 1621696.0,
+            "p99": 9991190.0,
+            "max": 37642447.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "amount_paid": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 45156,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 1565524.0,
+            "p99": 9908183.0,
+            "max": 37642447.0,
+            "zero_count": 31714,
+            "neg_count": 0
+          }
+        },
+        "last_payment_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 31714,
+          "null_pct": 2.3296,
+          "n_unique": 615250,
+          "date_range": {
+            "min": "2023-02-06 17:08:00",
+            "max": "2025-12-28 19:06:00"
+          }
+        },
+        "days_past_due": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 400,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 73.0,
+            "max": 502.0,
+            "zero_count": 1303405,
+            "neg_count": 0
+          }
+        },
+        "max_days_past_due": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 410,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 152.0,
+            "max": 502.0,
+            "zero_count": 901008,
+            "neg_count": 0
+          }
+        }
+      }
+    },
+    "account_behavior": {
+      "n_rows": 1084418,
+      "n_cols": 10,
+      "mem_mb": 88.94,
+      "columns": {
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 70000
+        },
+        "month": {
+          "dtype": "Date",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 34,
+          "date_range": {
+            "min": "2023-02-01",
+            "max": "2025-11-01"
+          }
+        },
+        "opening_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1062601,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 24842860.5,
+            "p99": 228333390.0,
+            "max": 883312223.0,
+            "zero_count": 14329,
+            "neg_count": 0
+          }
+        },
+        "closing_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1061820,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 27686481.5,
+            "p99": 240852375.0,
+            "max": 930514687.0,
+            "zero_count": 15907,
+            "neg_count": 0
+          }
+        },
+        "inflows": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1048866,
+          "stats": {
+            "min": 207635.0,
+            "p1": 1552883.0,
+            "p50": 7705212.0,
+            "p99": 33042610.0,
+            "max": 154910635.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "outflows": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1031448,
+          "stats": {
+            "min": 112853.0,
+            "p1": 855482.0,
+            "p50": 4844903.0,
+            "p99": 22983105.0,
+            "max": 94244127.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "income_like_credits": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1027757,
+          "stats": {
+            "min": 86307.0,
+            "p1": 677347.0,
+            "p50": 4379737.0,
+            "p99": 20308350.0,
+            "max": 140440386.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "average_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1076279,
+          "stats": {
+            "min": 0.0,
+            "p1": 352023.0,
+            "p50": 25546191.0,
+            "p99": 232913564.0,
+            "max": 904954147.0,
+            "zero_count": 10,
+            "neg_count": 0
+          }
+        },
+        "minimum_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 989669,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 22702074.5,
+            "p99": 224826323.0,
+            "max": 880734531.0,
+            "zero_count": 88278,
+            "neg_count": 0
+          }
+        },
+        "low_balance_days": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 32,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 20.0,
+            "max": 31.0,
+            "zero_count": 990268,
+            "neg_count": 0
+          }
+        }
+      }
+    },
+    "bureau_observations": {
+      "n_rows": 797563,
+      "n_cols": 14,
+      "mem_mb": 108.2,
+      "columns": {
+        "bureau_observation_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 797563
+        },
+        "application_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 301984
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 100000
+        },
+        "bureau_provider": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 3,
+          "categories": {
+            "Bureau_B": 247657,
+            "Bureau_C": 247922,
+            "Bureau_A": 301984
+          }
+        },
+        "report_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 589851,
+          "date_range": {
+            "min": "2022-09-11 10:32:00",
+            "max": "2025-12-28 18:38:00"
+          }
+        },
+        "available_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 578501,
+          "date_range": {
+            "min": "2023-01-02 20:29:00",
+            "max": "2025-12-28 20:58:00"
+          }
+        },
+        "score": {
+          "dtype": "Float64",
+          "null_count": 43839,
+          "null_pct": 5.4966,
+          "n_unique": 404,
+          "stats": {
+            "min": 423.0,
+            "p1": 546.0,
+            "p50": 669.0,
+            "p99": 794.0,
+            "max": 850.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "active_accounts": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 13,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 2.0,
+            "p99": 6.0,
+            "max": 12.0,
+            "zero_count": 124951,
+            "neg_count": 0
+          }
+        },
+        "outstanding_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 628471,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 12114601.0,
+            "p99": 89732383.0,
+            "max": 414905075.0,
+            "zero_count": 163637,
+            "neg_count": 0
+          }
+        },
+        "revolving_credit_limit": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 48094,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 49856162.0,
+            "max": 102796330.0,
+            "zero_count": 471615,
+            "neg_count": 0
+          }
+        },
+        "revolving_outstanding_balance": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 322795,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 27092745.0,
+            "max": 83818974.0,
+            "zero_count": 471615,
+            "neg_count": 0
+          }
+        },
+        "utilization": {
+          "dtype": "Float64",
+          "null_count": 471615,
+          "null_pct": 59.132,
+          "n_unique": 325949,
+          "stats": {
+            "min": 0.025425445546024196,
+            "p1": 0.15699799059519537,
+            "p50": 0.4846201243240756,
+            "p99": 0.8225283771196368,
+            "max": 0.9605994643452054,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "inquiries_last_6m": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 12,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 1.0,
+            "p99": 5.0,
+            "max": 11.0,
+            "zero_count": 187384,
+            "neg_count": 0
+          }
+        },
+        "delinquent_accounts_last_12m": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "stats": {
+            "min": 0.0,
+            "p1": 0.0,
+            "p50": 0.0,
+            "p99": 2.0,
+            "max": 4.0,
+            "zero_count": 662871,
+            "neg_count": 0
+          }
+        }
+      }
+    },
+    "ecommerce_transactions": {
+      "n_rows": 4359817,
+      "n_cols": 10,
+      "mem_mb": 460.04,
+      "columns": {
+        "order_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 2986855
+        },
+        "order_item_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 4359817
+        },
+        "customer_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 100000
+        },
+        "transaction_datetime": {
+          "dtype": "Datetime(time_unit='us', time_zone=None)",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1088361,
+          "date_range": {
+            "min": "2023-01-02 13:15:00",
+            "max": "2025-12-27 19:59:00"
+          }
+        },
+        "product_category": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 7,
+          "categories": {
+            "electronics": 308168,
+            "education": 384845,
+            "health": 463207,
+            "home": 578466,
+            "groceries": 1158896,
+            "fashion": 772034,
+            "personal_care": 694201
+          }
+        },
+        "quantity": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 4,
+          "stats": {
+            "min": 1.0,
+            "p1": 1.0,
+            "p50": 1.0,
+            "p99": 4.0,
+            "max": 4.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "item_total": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 8401,
+          "stats": {
+            "min": 5000.0,
+            "p1": 17000.0,
+            "p50": 142000.0,
+            "p99": 2698000.0,
+            "max": 27988000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "order_total": {
+          "dtype": "Int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 8994,
+          "stats": {
+            "min": 5000.0,
+            "p1": 22000.0,
+            "p50": 288000.0,
+            "p99": 3812000.0,
+            "max": 28106000.0,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        },
+        "payment_method": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 5,
+          "categories": {
+            "COD": 1769359,
+            "credit_card": 283058,
+            "e_wallet": 1018869,
+            "debit_card": 642028,
+            "bank_transfer": 646503
+          }
+        },
+        "order_status": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 2,
+          "categories": {
+            "completed": 4096949,
+            "cancelled": 262868
+          }
+        }
+      }
+    },
+    "sample_submission": {
+      "n_rows": 30000,
+      "n_cols": 2,
+      "mem_mb": 0.74,
+      "columns": {
+        "application_id": {
+          "dtype": "String",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 30000
+        },
+        "default_probability": {
+          "dtype": "Float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "n_unique": 1,
+          "stats": {
+            "min": 0.125,
+            "p1": 0.125,
+            "p50": 0.125,
+            "p99": 0.125,
+            "max": 0.125,
+            "zero_count": 0,
+            "neg_count": 0
+          }
+        }
+      }
+    }
+  },
+  "verifications": {
+    "customer_profiles": {
+      "total_rows": 100000,
+      "unique_customer_ids": 100000,
+      "duplicate_customer_ids": 0
+    },
+    "train_customers": {
+      "total_rows": 70000,
+      "unique_customers": 70000,
+      "max_apps_per_cust": 1,
+      "min_apps_per_cust": 1,
+      "dist_apps_per_cust": {
+        "1": 70000
+      }
+    },
+    "test_customers": {
+      "total_rows": 30000,
+      "unique_customers": 30000,
+      "max_apps_per_cust": 1,
+      "min_apps_per_cust": 1,
+      "dist_apps_per_cust": {
+        "1": 30000
+      }
+    },
+    "overlap": {
+      "customer_overlap_train_test": 0,
+      "application_overlap_train_test": 0,
+      "prev_apps_in_train": 0,
+      "prev_apps_in_test": 0
+    },
+    "bureau": {
+      "unique_applications": 301984,
+      "min_obs_per_app": 1,
+      "median_obs_per_app": 3.0,
+      "max_obs_per_app": 3,
+      "provider_counts": {
+        "Bureau_A": 301984,
+        "Bureau_C": 247922,
+        "Bureau_B": 247657
+      },
+      "diff_available_minus_report_hours": {
+        "min_hours": 0.0,
+        "p50_hours": 1440.0,
+        "max_hours": 2880.0,
+        "neg_count": 0,
+        "zero_count": 6604
+      }
+    },
+    "repayment_history": {
+      "unique_loans": 155901,
+      "unique_customers": 66157,
+      "min_inst_per_loan": 1,
+      "median_inst_per_loan": 7.0,
+      "max_inst_per_loan": 18,
+      "repay_loans_in_prev_loans": 155901,
+      "repay_loans_not_in_prev_loans": 0,
+      "repay_cust_in_train": 46312,
+      "repay_cust_in_test": 19845
+    }
+  }
+}

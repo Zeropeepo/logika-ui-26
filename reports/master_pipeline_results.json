@@ -1,0 +1,55 @@
+{
+  "models_15fold": {
+    "lgb_tuned": {
+      "mean_ks": 0.5016376238153486,
+      "std_ks": 0.008721486978371313,
+      "oof_ks": 0.5007284532020897,
+      "auc": 0.8313842376076584,
+      "time": 96.03052115440369
+    },
+    "xgb_tuned": {
+      "mean_ks": 0.5012774394642597,
+      "std_ks": 0.010136109139121262,
+      "oof_ks": 0.5016196909085873,
+      "auc": 0.8314051345903487,
+      "time": 130.50409960746765
+    },
+    "cb_tuned": {
+      "mean_ks": 0.49715860581932625,
+      "std_ks": 0.008608809840665784,
+      "oof_ks": 0.4933540822392181,
+      "auc": 0.8290246869229718,
+      "time": 236.72717380523682
+    },
+    "lr_tuned": {
+      "mean_ks": 0.5042953889270431,
+      "std_ks": 0.010012641691793547,
+      "oof_ks": 0.5009621419094967,
+      "auc": 0.8320135779405663,
+      "time": 114.88974976539612
+    }
+  },
+  "ensembles": {
+    "Simple_Rank_Average": {
+      "oof_ks": 0.5030147479472908,
+      "auc": 0.8338610204000125
+    },
+    "Weighted_Rank_Blend": {
+      "oof_ks": 0.5033671676140113,
+      "auc": 0.8346056349438906
+    },
+    "Weighted_Probability_Blend": {
+      "oof_ks": 0.5032762853878286,
+      "auc": 0.834662598261658
+    },
+    "Nested_Logistic_Stacker": {
+      "oof_ks": 0.5055822860329156,
+      "auc": 0.8347962777448678
+    }
+  },
+  "target_shuffle_ks": 0.03339518105471763,
+  "submissions": {
+    "candidate_A": "submissions/submission_candidate_A_stacker.csv",
+    "candidate_B": "submissions/submission_candidate_B_blend.csv"
+  }
+}

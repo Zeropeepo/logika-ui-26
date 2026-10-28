@@ -1,0 +1,42 @@
+{
+  "previous_applications": {
+    "total_candidate_rows": 201984,
+    "violating_decision_cutoff": 0,
+    "violating_app_cutoff": 0,
+    "violating_any": 0,
+    "pct_violating": 0.0,
+    "action": "Filter: strictly keep previous_applications where decision_datetime < cutoff_datetime"
+  },
+  "bureau_observations_by_application": {
+    "total_matched_rows": 264088,
+    "violating_available_datetime": 0,
+    "pct_violating_available": 0.0,
+    "violating_report_datetime": 0,
+    "rep_before_cutoff_but_avail_after": 0,
+    "pct_trap_leaks": 0.0,
+    "action": "Filter: strictly require available_datetime <= decision_datetime. Reject records where available_datetime > decision_datetime even if report_datetime <= cutoff."
+  },
+  "account_behavior": {
+    "total_candidate_rows": 1084418,
+    "violating_incomplete_month": 0,
+    "pct_violating": 0.0,
+    "action": "Filter: strictly keep complete months only, i.e., month.dt.offset_by('1mo') <= cutoff_datetime"
+  },
+  "repayment_history": {
+    "total_candidate_rows": 1361341,
+    "violating_due_date_cutoff": 0,
+    "pct_violating_due_date": 0.0,
+    "violating_payment_datetime_cutoff": 0,
+    "pct_violating_payment_datetime": 0.0,
+    "due_before_cutoff_but_paid_after": 0,
+    "action": "Filter: strictly keep installments where due_date < cutoff_datetime. Furthermore, if last_payment_datetime >= cutoff_datetime, payment was made in the future: mask payment or treat as unpaid at cutoff!"
+  },
+  "ecommerce_transactions": {
+    "total_candidate_rows": 4359817,
+    "violating_transaction_cutoff": 0,
+    "pct_violating_time": 0.0,
+    "cancelled_order_rows": 262868,
+    "pct_cancelled": 6.0293,
+    "action": "Filter: strictly keep transaction_datetime < decision_datetime. For spending aggregates, filter out order_status == 'cancelled' and deduplicate by order_id before summing order_total."
+  }
+}

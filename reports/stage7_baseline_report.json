@@ -1,0 +1,200 @@
+{
+  "models_summary": [
+    {
+      "model": "B0_Random",
+      "ks_mean": 0.0131,
+      "ks_std": 0.0,
+      "ci_95": [
+        0.009,
+        0.0273
+      ],
+      "ks_holdout": 0.0139,
+      "auc_oof": 0.493,
+      "note": "Sanity check random scores"
+    },
+    {
+      "model": "B0_Single_Feature (annual_interest_rate)",
+      "ks_mean": 0.2289,
+      "ks_std": 0.0,
+      "ci_95": [
+        0.2173,
+        0.2409
+      ],
+      "ks_holdout": 0.2347,
+      "auc_oof": 0.6461,
+      "note": "Single feature benchmark"
+    },
+    {
+      "model": "B1_Logistic_Regression",
+      "ks_mean": 0.4916,
+      "ks_std": 0.0104,
+      "ci_95": [
+        0.4789,
+        0.4991
+      ],
+      "ks_holdout": 0.5025,
+      "auc_oof": 0.8204,
+      "note": "Linear model baseline with median imputation & scaling"
+    },
+    {
+      "model": "B2_LightGBM",
+      "ks_mean": 0.4879,
+      "ks_std": 0.0099,
+      "ci_95": [
+        0.4744,
+        0.4945
+      ],
+      "ks_holdout": 0.4991,
+      "auc_oof": 0.8204,
+      "note": "Conservative GBDT (lr=0.03, leaves=31, colsample=0.8)"
+    },
+    {
+      "model": "B3_CatBoost",
+      "ks_mean": 0.4855,
+      "ks_std": 0.0125,
+      "ci_95": [
+        0.4726,
+        0.4916
+      ],
+      "ks_holdout": 0.4967,
+      "auc_oof": 0.8204,
+      "note": "CatBoost with default depth=6, lr=0.05"
+    }
+  ],
+  "sanity_checks": {
+    "shuffle_test_ks": 0.0073,
+    "source_ablation": {
+      "without_previous_applications": {
+        "n_features": 119,
+        "ks": 0.4779,
+        "auc": 0.8173,
+        "ks_delta_vs_full": -0.0057
+      },
+      "without_repayment_history": {
+        "n_features": 113,
+        "ks": 0.4293,
+        "auc": 0.7906,
+        "ks_delta_vs_full": -0.0543
+      },
+      "without_account_behavior": {
+        "n_features": 102,
+        "ks": 0.4827,
+        "auc": 0.8194,
+        "ks_delta_vs_full": -0.0009
+      },
+      "without_bureau_observations": {
+        "n_features": 111,
+        "ks": 0.4681,
+        "auc": 0.8087,
+        "ks_delta_vs_full": -0.0155
+      },
+      "without_ecommerce_transactions": {
+        "n_features": 106,
+        "ks": 0.4032,
+        "auc": 0.7776,
+        "ks_delta_vs_full": -0.0804
+      },
+      "only_application_and_profile": {
+        "n_features": 23,
+        "ks": 0.2296,
+        "auc": 0.6499,
+        "ks_delta_vs_full": -0.254
+      }
+    }
+  },
+  "top_features": [
+    {
+      "feature": "repay_max_max_dpd",
+      "importance_gain": 32618.878830337526
+    },
+    {
+      "feature": "ecom_spending_30d",
+      "importance_gain": 11328.404594993592
+    },
+    {
+      "feature": "bureau_score_mean",
+      "importance_gain": 10636.473762607573
+    },
+    {
+      "feature": "ecom_spending_90d",
+      "importance_gain": 8427.546350574494
+    },
+    {
+      "feature": "ecom_recency_days",
+      "importance_gain": 7335.29251089096
+    },
+    {
+      "feature": "bureau_score_max",
+      "importance_gain": 6496.053151226043
+    },
+    {
+      "feature": "repay_underpaid_ratio",
+      "importance_gain": 5729.386246013641
+    },
+    {
+      "feature": "ecom_orders_30d",
+      "importance_gain": 5714.987222671509
+    },
+    {
+      "feature": "ecom_mean_order_value",
+      "importance_gain": 4870.436981487274
+    },
+    {
+      "feature": "bureau_score_min",
+      "importance_gain": 4445.012550067901
+    },
+    {
+      "feature": "repay_paid_over_due_ratio",
+      "importance_gain": 3657.2849979400635
+    },
+    {
+      "feature": "bureau_score_Bureau_A",
+      "importance_gain": 3409.0178614616393
+    },
+    {
+      "feature": "repay_mean_dpd",
+      "importance_gain": 3399.6207902908322
+    },
+    {
+      "feature": "repay_installment_count",
+      "importance_gain": 3296.3664539337155
+    },
+    {
+      "feature": "interest_amount",
+      "importance_gain": 2853.476644897461
+    }
+  ],
+  "segment_performance": {
+    "loan_purpose": {
+      "home_improvement": 0.4842,
+      "medical": 0.4765,
+      "household": 0.5047,
+      "working_capital": 0.4758,
+      "education": 0.4884
+    },
+    "region": {
+      "Region_D": 0.4938,
+      "Region_E": 0.4914,
+      "Region_B": 0.4863,
+      "Region_C": 0.4808,
+      "Region_A": 0.4862
+    },
+    "employment_type": {
+      "salaried": 0.4845,
+      "self_employed": 0.4822,
+      "variable_income": 0.4915
+    }
+  },
+  "prediction_distribution_check": {
+    "train_oof_mean": 0.13453497595268415,
+    "test_pred_mean": 0.13529625708309692,
+    "train_oof_std": 0.15442480143393747,
+    "test_pred_std": 0.15354238399560505,
+    "train_oof_median": 0.07347596058146269,
+    "test_pred_median": 0.07384389553264985,
+    "train_oof_min": 0.002260936354676975,
+    "test_pred_min": 0.005069852281050455,
+    "train_oof_max": 0.9220544177386956,
+    "test_pred_max": 0.8848231212896256
+  }
+}

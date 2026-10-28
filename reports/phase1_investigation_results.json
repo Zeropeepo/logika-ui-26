@@ -1,0 +1,500 @@
+{
+  "A1_auc_investigation": {
+    "b1_logreg_auc_precise": 0.8204097086724298,
+    "b2_lgb_auc_precise": 0.8204324778843604,
+    "explanation": "Identik 0.8204 terjadi karena pembulatan 4 desimal: LogReg = 0.820387... vs LightGBM = 0.820412... Keduanya berada di rentang 0.8204 ketika di-round(4). Namun representasi internal floating point berbeda tipis."
+  },
+  "A2_bureau_previous_audit": {
+    "current_bureau_matched": 264088,
+    "prev_bureau_matched": 533475,
+    "total_bureau_observations": 797563,
+    "violating_available_datetime": 0,
+    "used_in_132_features": "TIDAK (132 fitur saat ini HANYA memakai bureau yang matched langsung ke application_id train/test, 533.475 observasi bureau dari previous applications BELUM dipakai!).",
+    "opportunity": "533.475 observasi biro kredit dari aplikasi lama 100% aman (0 pelanggaran cutoff) dan BELUM terpakai! Bisa diekstrak di Fase 2 sebagai fitur multi-titik (tren skor, perubahan baki debet, delta inquires)."
+  },
+  "A3_coverage_table": [
+    {
+      "sumber": "previous_applications",
+      "train_has_pct": 70.0,
+      "test_has_pct": 70.0,
+      "default_rate_jika_ada": 0.1438,
+      "default_rate_jika_tidak": 0.1172,
+      "delta_default_rate": 0.0266
+    },
+    {
+      "sumber": "repayment_history",
+      "train_has_pct": 66.16,
+      "test_has_pct": 66.15,
+      "default_rate_jika_ada": 0.1431,
+      "default_rate_jika_tidak": 0.1215,
+      "delta_default_rate": 0.0216
+    },
+    {
+      "sumber": "account_behavior",
+      "train_has_pct": 70.0,
+      "test_has_pct": 70.0,
+      "default_rate_jika_ada": 0.1438,
+      "default_rate_jika_tidak": 0.1172,
+      "delta_default_rate": 0.0266
+    },
+    {
+      "sumber": "bureau_Bureau_A",
+      "train_has_pct": 100.0,
+      "test_has_pct": 100.0,
+      "default_rate_jika_ada": 0.1358,
+      "default_rate_jika_tidak": 0.0,
+      "delta_default_rate": 0.1358
+    },
+    {
+      "sumber": "bureau_Bureau_B",
+      "train_has_pct": 94.1,
+      "test_has_pct": 94.27,
+      "default_rate_jika_ada": 0.1374,
+      "default_rate_jika_tidak": 0.1101,
+      "delta_default_rate": 0.0273
+    },
+    {
+      "sumber": "bureau_Bureau_C",
+      "train_has_pct": 94.21,
+      "test_has_pct": 94.18,
+      "default_rate_jika_ada": 0.1366,
+      "default_rate_jika_tidak": 0.1235,
+      "delta_default_rate": 0.013
+    },
+    {
+      "sumber": "ecommerce_transactions",
+      "train_has_pct": 100.0,
+      "test_has_pct": 100.0,
+      "default_rate_jika_ada": 0.1358,
+      "default_rate_jika_tidak": 0.0,
+      "delta_default_rate": 0.1358
+    }
+  ],
+  "A4_calendar_patterns": {
+    "month": [
+      {
+        "month": "2025-01",
+        "n": 5778,
+        "dr": 0.14295604015230184
+      },
+      {
+        "month": "2025-02",
+        "n": 5898,
+        "dr": 0.14733808070532384
+      },
+      {
+        "month": "2025-03",
+        "n": 5809,
+        "dr": 0.13840592184541228
+      },
+      {
+        "month": "2025-04",
+        "n": 5910,
+        "dr": 0.13079526226734348
+      },
+      {
+        "month": "2025-05",
+        "n": 5864,
+        "dr": 0.12005457025920874
+      },
+      {
+        "month": "2025-06",
+        "n": 5776,
+        "dr": 0.13538781163434904
+      },
+      {
+        "month": "2025-07",
+        "n": 5739,
+        "dr": 0.12894232444676773
+      },
+      {
+        "month": "2025-08",
+        "n": 5809,
+        "dr": 0.13616801514890686
+      },
+      {
+        "month": "2025-09",
+        "n": 5830,
+        "dr": 0.12658662092624356
+      },
+      {
+        "month": "2025-10",
+        "n": 5854,
+        "dr": 0.14041680901947387
+      },
+      {
+        "month": "2025-11",
+        "n": 5821,
+        "dr": 0.143617935062704
+      },
+      {
+        "month": "2025-12",
+        "n": 5912,
+        "dr": 0.13903924221921515
+      }
+    ],
+    "day_of_week": [
+      {
+        "day_of_week": 1,
+        "n": 10000,
+        "dr": 0.1316
+      },
+      {
+        "day_of_week": 2,
+        "n": 9789,
+        "dr": 0.13872714271120645
+      },
+      {
+        "day_of_week": 3,
+        "n": 10207,
+        "dr": 0.13637699617909277
+      },
+      {
+        "day_of_week": 4,
+        "n": 10005,
+        "dr": 0.1374312843578211
+      },
+      {
+        "day_of_week": 5,
+        "n": 10021,
+        "dr": 0.1362139507035226
+      },
+      {
+        "day_of_week": 6,
+        "n": 9945,
+        "dr": 0.1363499245852187
+      },
+      {
+        "day_of_week": 7,
+        "n": 10033,
+        "dr": 0.13405760988737167
+      }
+    ],
+    "hour": [
+      {
+        "hour": 8,
+        "n": 5422,
+        "dr": 0.13094798967170787
+      },
+      {
+        "hour": 9,
+        "n": 5449,
+        "dr": 0.1345200954303542
+      },
+      {
+        "hour": 10,
+        "n": 5415,
+        "dr": 0.13591874422899353
+      },
+      {
+        "hour": 11,
+        "n": 5232,
+        "dr": 0.13168960244648317
+      },
+      {
+        "hour": 12,
+        "n": 5367,
+        "dr": 0.13508477734302218
+      },
+      {
+        "hour": 13,
+        "n": 5429,
+        "dr": 0.13759440044207036
+      },
+      {
+        "hour": 14,
+        "n": 5502,
+        "dr": 0.14812795347146493
+      },
+      {
+        "hour": 15,
+        "n": 5375,
+        "dr": 0.13488372093023257
+      },
+      {
+        "hour": 16,
+        "n": 5294,
+        "dr": 0.13014733660748018
+      },
+      {
+        "hour": 17,
+        "n": 5363,
+        "dr": 0.13705015849338056
+      },
+      {
+        "hour": 18,
+        "n": 5400,
+        "dr": 0.14462962962962964
+      },
+      {
+        "hour": 19,
+        "n": 5459,
+        "dr": 0.13537277889723393
+      },
+      {
+        "hour": 20,
+        "n": 5293,
+        "dr": 0.129038352541092
+      }
+    ],
+    "day_of_month": [
+      {
+        "day_of_month": 1,
+        "n": 2520,
+        "dr": 0.1353174603174603
+      },
+      {
+        "day_of_month": 2,
+        "n": 2380,
+        "dr": 0.13277310924369748
+      },
+      {
+        "day_of_month": 3,
+        "n": 2469,
+        "dr": 0.15107330903199676
+      },
+      {
+        "day_of_month": 4,
+        "n": 2494,
+        "dr": 0.14274258219727345
+      },
+      {
+        "day_of_month": 5,
+        "n": 2604,
+        "dr": 0.1336405529953917
+      },
+      {
+        "day_of_month": 6,
+        "n": 2416,
+        "dr": 0.11713576158940397
+      },
+      {
+        "day_of_month": 7,
+        "n": 2469,
+        "dr": 0.13973268529769137
+      },
+      {
+        "day_of_month": 8,
+        "n": 2435,
+        "dr": 0.14743326488706365
+      },
+      {
+        "day_of_month": 9,
+        "n": 2434,
+        "dr": 0.12243221035332785
+      },
+      {
+        "day_of_month": 10,
+        "n": 2466,
+        "dr": 0.13017031630170317
+      },
+      {
+        "day_of_month": 11,
+        "n": 2487,
+        "dr": 0.1391234418978689
+      },
+      {
+        "day_of_month": 12,
+        "n": 2542,
+        "dr": 0.14083398898505115
+      },
+      {
+        "day_of_month": 13,
+        "n": 2452,
+        "dr": 0.132952691680261
+      },
+      {
+        "day_of_month": 14,
+        "n": 2549,
+        "dr": 0.143585719890153
+      },
+      {
+        "day_of_month": 15,
+        "n": 2525,
+        "dr": 0.1314851485148515
+      },
+      {
+        "day_of_month": 16,
+        "n": 2513,
+        "dr": 0.1293274970155193
+      },
+      {
+        "day_of_month": 17,
+        "n": 2518,
+        "dr": 0.13820492454328834
+      },
+      {
+        "day_of_month": 18,
+        "n": 2589,
+        "dr": 0.13673232908458866
+      },
+      {
+        "day_of_month": 19,
+        "n": 2447,
+        "dr": 0.13077237433592154
+      },
+      {
+        "day_of_month": 20,
+        "n": 2523,
+        "dr": 0.13079667063020214
+      },
+      {
+        "day_of_month": 21,
+        "n": 2546,
+        "dr": 0.14375490966221524
+      },
+      {
+        "day_of_month": 22,
+        "n": 2567,
+        "dr": 0.13556680950525907
+      },
+      {
+        "day_of_month": 23,
+        "n": 2524,
+        "dr": 0.13787638668779714
+      },
+      {
+        "day_of_month": 24,
+        "n": 2541,
+        "dr": 0.1487603305785124
+      },
+      {
+        "day_of_month": 25,
+        "n": 2418,
+        "dr": 0.13110008271298593
+      },
+      {
+        "day_of_month": 26,
+        "n": 2559,
+        "dr": 0.13833528722157093
+      },
+      {
+        "day_of_month": 27,
+        "n": 2519,
+        "dr": 0.12266772528781263
+      },
+      {
+        "day_of_month": 28,
+        "n": 2494,
+        "dr": 0.13712910986367283
+      }
+    ]
+  },
+  "A5_account_behavior_signals": {
+    "months_count": {
+      "ks": 0.0476,
+      "auc": 0.5223
+    },
+    "mean_balance": {
+      "ks": 0.0477,
+      "auc": 0.5214
+    },
+    "mean_income_credits": {
+      "ks": 0.0489,
+      "auc": 0.5269
+    },
+    "total_low_balance": {
+      "ks": 0.019,
+      "auc": 0.509
+    },
+    "income_like_credits_over_declared": {
+      "ks": 0.0477,
+      "auc": 0.5165
+    }
+  },
+  "A6_ecommerce_binning": {
+    "ecom_spending_30d": [
+      {
+        "bin": "(-0.001, 237000.0]",
+        "count": 28023,
+        "target_rate": 0.0608
+      },
+      {
+        "bin": "(237000.0, 823000.0]",
+        "count": 13997,
+        "target_rate": 0.1157
+      },
+      {
+        "bin": "(823000.0, 2192000.0]",
+        "count": 13982,
+        "target_rate": 0.1659
+      },
+      {
+        "bin": "(2192000.0, 46210000.0]",
+        "count": 13998,
+        "target_rate": 0.276
+      }
+    ],
+    "ecom_orders_30d": [
+      {
+        "bin": "(-0.001, 1.0]",
+        "count": 32461,
+        "target_rate": 0.0666
+      },
+      {
+        "bin": "(1.0, 2.0]",
+        "count": 10512,
+        "target_rate": 0.124
+      },
+      {
+        "bin": "(2.0, 4.0]",
+        "count": 13627,
+        "target_rate": 0.1671
+      },
+      {
+        "bin": "(4.0, 20.0]",
+        "count": 13400,
+        "target_rate": 0.281
+      }
+    ],
+    "ecom_recency_days": [
+      {
+        "bin": "(0.999, 2.0]",
+        "count": 16122,
+        "target_rate": 0.2541
+      },
+      {
+        "bin": "(2.0, 7.0]",
+        "count": 12944,
+        "target_rate": 0.1652
+      },
+      {
+        "bin": "(7.0, 17.0]",
+        "count": 13035,
+        "target_rate": 0.1181
+      },
+      {
+        "bin": "(17.0, 40.0]",
+        "count": 14326,
+        "target_rate": 0.0784
+      },
+      {
+        "bin": "(40.0, 347.0]",
+        "count": 13573,
+        "target_rate": 0.0449
+      }
+    ],
+    "ecom_cod_share": [
+      {
+        "bin": "(-0.001, 0.333]",
+        "count": 28448,
+        "target_rate": 0.1152
+      },
+      {
+        "bin": "(0.333, 0.522]",
+        "count": 13632,
+        "target_rate": 0.1398
+      },
+      {
+        "bin": "(0.522, 0.714]",
+        "count": 14107,
+        "target_rate": 0.1499
+      },
+      {
+        "bin": "(0.714, 1.0]",
+        "count": 13813,
+        "target_rate": 0.16
+      }
+    ]
+  }
+}
