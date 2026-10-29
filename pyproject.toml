@@ -1,7 +1,29 @@
 [project]
 name = "logika-ui"
 version = "0.1.0"
-description = "Add your description here"
+description = "Credit risk analysis and Kumo Tabular ablation experiments"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy==2.2.6",
+    "pandas==2.2.3",
+    "polars==1.32.3",
+    "pyarrow==20.0.0",
+    "scikit-learn==1.6.1",
+    "scipy==1.15.3",
+    "structured-data-models==0.2.1",
+    "torch==2.7.1",
+]
+
+[project.optional-dependencies]
+legacy = [
+    "catboost>=1.2.5,<2",
+    "lightgbm>=4.3,<5",
+    "optuna>=3.6,<5",
+    "psutil>=5.9,<8",
+    "xgboost>=2,<4",
+]
+tabpfn = [
+    "python-dotenv>=1,<2",
+    "tabpfn>=2,<3",
+]

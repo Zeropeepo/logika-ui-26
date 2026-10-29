@@ -2,6 +2,19 @@
 
 Source code analisis data, feature engineering, baseline model, dan eksperimen HPC.
 
+## Instalasi dependensi
+
+Dengan Python 3.11 atau 3.12 dan `uv`, siapkan dependensi utama KuMo:
+
+```bash
+uv sync
+```
+
+Tambahkan `--extra legacy` untuk eksperimen LightGBM, CatBoost, XGBoost, dan
+Optuna; tambahkan `--extra tabpfn` untuk benchmark TabPFN lama. Pilihan wheel
+PyTorch dan CUDA harus sesuai dengan node HPC: untuk instalasi CUDA 12.6 yang
+ditargetkan suite KuMo, ikuti [panduan HPC](HPC/kumo_suite/README.md).
+
 ## KuMo Small–Large
 
 Paket terbaru menyediakan **52 konfigurasi ablasi**, 39 fitur temporal tambahan,
